@@ -10,10 +10,12 @@
   border: solid 2px #444444;
   cursor: pointer;
   transition: 0.3s;
+
   &:hover {
     background-color: #444444;
     color: #ffffff;
   }
+
   &:disabled {
     opacity: 0.3;
   }

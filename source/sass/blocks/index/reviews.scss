@@ -1,29 +1,34 @@
 .reviews__item {
   margin: 0;
 }
+
 .reviews__text {
-  font-family: "Open-sans";
+  font-family: "Open-sans", sans-serif;
   font-size: 15px;
   line-height: 30px;
   color: #444444;
 }
+
 .reviews__name {
   font-size: 17px;
   line-height: 24px;
 }
+
 .reviews__email {
-  font-family: "Open-sans";
+  font-family: "Open-sans", sans-serif;
   font-size: 17px;
   line-height: 24px;
 }
+
 .reviews__button {
   width: 130px;
   padding: 0;
   min-height: 52px;
-  background-image: url("/image/img-icon/icon-huge-arrow.svg");
+  background-image: url("../image/img-icon/icon-huge-arrow.svg");
   background-repeat: no-repeat;
   background-position: 50%;
   border: none;
   margin-bottom: 38px;
 }
+
 // подумать почему у кнопок растояние и как их развернуть
