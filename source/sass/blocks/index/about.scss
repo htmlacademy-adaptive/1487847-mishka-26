@@ -1,0 +1,12 @@
+.about__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.about__item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 17px;
+  line-height: 20px;
+}

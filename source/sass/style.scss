@@ -1,1 +1,54 @@
-// Начните писать стили здесь
+@use "./blocks/body/body.scss";
+@use "./blocks/body/page.scss";
+@use "./blocks/catalog/main-catalog.scss";
+@use "./blocks/catalog/product-item.scss";
+@use "./blocks/catalog/production-process.scss";
+@use "./blocks/category/category.scss";
+@use "./blocks/index/contacts.scss";
+@use "./blocks/footer/footer.scss";
+@use "./blocks/form/filter.scss";
+@use "./blocks/form/form-order.scss";
+@use "./blocks/form/form-wrapper.scss";
+@use "./blocks/general/button.scss";
+@use "./blocks/general/visually-hidden.scss";
+@use "./blocks/header/header.scss";
+@use "./blocks/header/logo.scss";
+@use "./blocks/header/nav-toggle.scss";
+@use "./blocks/index/about.scss";
+@use "./blocks/index/product-week.scss";
+@use "./blocks/index/reviews.scss";
+@use "./blocks/main/main-container.scss";
+@use "./blocks/main/main-nav.scss";
+@use "./blocks/main/main-title.scss";
+@use "./blocks/form/modal.scss";
+@use "./blocks/section/section-title.scss";
+@use "./blocks/section/section.scss";
+@font-face {
+  font-family: "Open-sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/source/fonts/opensans.woff) format("woff");
+}
+@font-face {
+  font-family: "Open-sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/source/fonts/opensans.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Open-sans-bold";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/source/fonts/opensansbold.woff) format("woff");
+}
+@font-face {
+  font-family: "Open-sans-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/source/fonts/opensansbold.woff2) format("woff2");
+}
+
