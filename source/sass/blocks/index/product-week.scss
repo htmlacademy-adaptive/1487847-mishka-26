@@ -1,0 +1,33 @@
+.product-week__subtitle {
+  font-size: 17px;
+  line-height: 20px;
+  color: #63d1bb;
+}
+
+.product-week__info {
+  font-family: "Open-sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #444444;
+}
+
+.product-week__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-week__item {
+  display: flex;
+  font-family: "Open-sans", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.product-week__price {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #444444;
+}

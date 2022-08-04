@@ -1,0 +1,17 @@
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__item {
+  display: flex;
+  gap: 20px;
+  font-family: "Open-sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.contacts__link--email {
+  border-bottom: 1px solid #62d1ba;
+}

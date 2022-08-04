@@ -1,0 +1,9 @@
+.footer__social-list {
+  display: grid;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+}
+
+.footer__social-item:last-child {
+  grid-column: 1/4;
+}

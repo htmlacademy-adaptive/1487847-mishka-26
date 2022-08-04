@@ -5,42 +5,43 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Интернет-магазин Мишка</title>
-  <link rel="stylesheet" type="text/css" href="/source/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body class="page__body">
   <header class="header">
     <a class="logo" href="index.html">
-      <img src="/image/mishka-logo-mobile.svg" width="86" height="35" alt="логотип мишка">
+      <img src="image/mishka-logo-mobile.svg" width="86" height="35" alt="логотип мишка">
     </a>
     <button class="nav-toggle" type="button">
       <span class="visually-hidden">
         Кнопка открыть меню.
       </span>
     </button>
-    <nav class="header-nav">
-      <div class="header-nav__wrapper">
-        <ul class="header-nav__list">
-          <li class="header-nav__item">
-            <a class="header-nav__link" href="/source/catalog.html">
+    <nav class="category">
+      <div class="category__wrapper">
+        <ul class="category__list">
+          <li class="category__item">
+            <a class="category__link" href="source/catalog.html">
               Каталог товаров
             </a>
           </li>
-          <li class="header-nav__item">
-            <a class="header-nav__link" href="/source/modal.html">
+          <li class="category__item">
+            <a class="category__link" href="modal.html">
               Вязание на заказ
             </a>
           </li>
-          <li class="header-nav__item">
-            <a class="header-nav__link" href="#">
-                <svg width="18" height="18" aria-hidden="true" focusable="false" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <li class="category__item">
+            <a class="category__link" href="#">
+                <svg class="category__icon"  width="18" height="18" aria-hidden="true" focusable="false" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path opacity="0.2" d="M17.6932 16.0568L14.2159 12.5795C15.2386 11.25 15.75 9.61364 15.75 7.875C15.75 3.47727 12.2727 0 7.875 0C3.47727 0 0 3.47727 0 7.875C0 12.2727 3.47727 15.75 7.875 15.75C9.61364 15.75 11.25 15.1364 12.5795 14.2159L16.0568 17.6932C16.2614 17.8977 16.4659 18 16.875 18C17.4886 18 18 17.4886 18 16.875C18 16.6705 17.8977 16.3636 17.6932 16.0568ZM2.25 7.875C2.25 4.80682 4.80682 2.25 7.875 2.25C10.9432 2.25 13.5 4.80682 13.5 7.875C13.5 10.9432 10.9432 13.5 7.875 13.5C4.80682 13.5 2.25 10.9432 2.25 7.875Z" fill="black" />
                 </svg>
               Поиск по сайту
             </a>
           </li>
-          <li class="header-nav__item">
-            <a class="header-nav__link" href="#">
-                <svg width="20" height="19" aria-hidden="true" focusable="false" viewbox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <li class="category__item">
+            <a class="category__link" href="#">
+                <svg class="category__icon"  width="20" height="19" aria-hidden="true" focusable="false" viewbox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path opacity="0.2" d="M19.2271 7.23811H15.8454L12.5604 0.402108C12.3672 -9.09136e-06 11.9807 -0.100526 11.5942 0.100532C11.2077 0.301591 11.1111 0.703707 11.3043 1.10582L14.2995 7.23811H5.50723L8.50241 1.10582C8.69565 0.703707 8.50242 0.301591 8.21257 0.100532C7.82609 -0.100526 7.43962 0.10052 7.24638 0.402108L3.96133 7.23811H0.772936C0.386462 7.23811 0 7.53968 0 8.04233C0 8.44445 0.289844 8.84655 0.772936 8.84655H0.966184L1.83574 11.8624C1.64251 11.963 1.54587 12.164 1.54587 12.4656C1.54587 12.8677 1.83574 13.1693 2.22221 13.1693L3.86474 19H16.1353L17.7778 13.1693C18.1643 13.1693 18.4541 12.8677 18.4541 12.4656C18.4541 12.2645 18.3575 11.963 18.1643 11.8624L19.0338 8.84655H19.2271C19.6135 8.84655 20 8.54498 20 8.04233C20 7.53968 19.6135 7.23811 19.2271 7.23811ZM14.8792 17.3915H4.83092L3.67149 13.0688H16.1353L14.8792 17.3915ZM16.4251 11.5609H3.1884L2.41546 8.74605H17.1981L16.4251 11.5609Z" fill="black" />
                 </svg>
               Корзина: пока пуста
@@ -52,7 +53,7 @@
   </header>
 
   <main class="main-container">
-    <h1 class="main-title">
+    <h1 class="main-title main-title--index">
       Милые штуки ручной работы для дома
     </h1>
     <nav class="main-nav">
@@ -127,7 +128,7 @@
           </li>
 
         </ul>
-        <img class="product-week__image" width="260" height="315" src="/image/triple-set-mobile-1.jpg" alt="три корзины">
+        <img class="product-week__image" width="260" height="315" src="image/triple-set-mobile-1.jpg" alt="три корзины">
         <p class="product-week__price">
           Цена: 990 руб.
         </p>
@@ -142,32 +143,32 @@
         <ul class="about__list">
 
           <li class="about__item">
-            <img class="about__img" src="/image/img-about/flowers.svg" width="33" height="38" alt="экологически чистый цветок">
+            <img class="about__img" src="image/img-about/flowers.svg" width="33" height="38" alt="экологически чистый цветок">
             Экологически чистые материалы
           </li>
 
           <li class="about__item">
-            <img class="about__img" src="/image/img-about/money.svg" width="47" height="27" alt="экономия денег">
+            <img class="about__img" src="image/img-about/money.svg" width="47" height="27" alt="экономия денег">
             Скандинавский стиль по российской цене
           </li>
 
           <li class="about__item">
-            <img class="about__img" src="/image/img-about/heart.svg" width="34" height="27" alt="сердце лайков в социальных сетях">
+            <img class="about__img" src="image/img-about/heart.svg" width="34" height="27" alt="сердце лайков в социальных сетях">
             Увеличивает лайки на фотографиях
           </li>
 
           <li class="about__item">
-            <img class="about__img" src="/image/img-about/skein-tread.svg" width="35" height="34" alt="моток ниток связянных с любовью">
+            <img class="about__img" src="image/img-about/skein-tread.svg" width="35" height="34" alt="моток ниток связянных с любовью">
             Связано вручную с любовью и умилением
           </li>
 
           <li class="about__item">
-            <img class="about__img" src="/image/img-about/rocket.svg" width="55" height="23" alt="Ракета отечественного производителя">
+            <img class="about__img" src="image/img-about/rocket.svg" width="55" height="23" alt="Ракета отечественного производителя">
             Поддержка отечественного производителя
           </li>
 
           <li class="about__item">
-            <img class="about__img" src="/image/img-about/gift-box.svg" width="33" height="32" alt="Подарочная упаковка">
+            <img class="about__img" src="image/img-about/gift-box.svg" width="33" height="32" alt="Подарочная упаковка">
             Поставляется в подарочной упаковке
           </li>
 
@@ -192,10 +193,13 @@
               </p>
             </blockquote>
           </div>
-          <button class="reviews__button reviews__button--next">
-          </button>
-          <button class="reviews__button reviews__button--back">
-          </button>
+          <div class="reviews__button__wrapper">
+            <button class="reviews__button reviews__button--next">
+            </button>
+            <button class="reviews__button reviews__button--back">
+            </button>
+          </div>
+
           <button class="reviews__button-form button">
             написать
           </button>
@@ -212,7 +216,7 @@
             <p class="contacts__text">
               e-mail:
             </p>
-            <a class="contacts__link" href="mailto:info@mimimishkashop.ru">
+            <a class="contacts__link contacts__link--email" href="mailto:info@mimimishkashop.ru">
               info@mimimishkashop.ru
             </a>
           </li>
