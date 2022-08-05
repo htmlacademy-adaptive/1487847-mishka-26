@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    flex-direction: row;
+
+  }
+}
+
+.header__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.header__item {
+  padding: 28px 65px 26px 76px;
+  margin: 0 -30px;
+  border-bottom: 1px solid $whisper;
+}
+
+.header__item--last-item {
+  border-bottom: none;
+}
+
+.header__logo-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 22px 0;
+  border-bottom: 1px solid $whisper;
+  margin: 0 -30px;
+}
+

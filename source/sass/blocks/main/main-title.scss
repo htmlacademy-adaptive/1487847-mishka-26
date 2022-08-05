@@ -5,7 +5,13 @@
 }
 
 .main-title--index {
+  display: flex;
+  align-items: center;
   background-image: url("../image/hero-mobile.png");
   background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100%;
+  margin: 0 -30px;
   min-height: 373px;
+  text-align: center;
 }

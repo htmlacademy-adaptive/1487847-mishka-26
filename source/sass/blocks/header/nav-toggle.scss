@@ -1,3 +1,41 @@
-// .nav-toogle {
+@media (min-width: $tablet-width) {
+  .nav-toggle {
+    display: none;
+  }
+}
 
-// }
+.nav-toggle {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 14px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin-right: 31px;
+}
+.nav-toggle:before,
+.nav-toggle::after {
+  content: "";
+  background-color: $black;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+}
+
+.nav-toggle:before {
+  top: 0;
+}
+.nav-toggle::after {
+  bottom: 0;
+}
+
+.nav-toggle__span {
+  position: absolute;
+  background-color: $black;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  top: 6px;
+}

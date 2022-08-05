@@ -1,17 +1,17 @@
 .filter__title {
-  color: #63d1bb;
+  color: $dark-green;
 }
 
 .filter__label {
   font-size: 17px;
   line-height: 18px;
-  color: #000000;
+  color: $black;
 }
 
 .filter__input-wrapper {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid $black;
 }
 
 .filter__input {
@@ -39,5 +39,5 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: #444444;
+  color: $grey;
 }

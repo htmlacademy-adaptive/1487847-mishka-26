@@ -13,5 +13,14 @@
 }
 
 .contacts__link--email {
-  border-bottom: 1px solid #62d1ba;
+  border-bottom: 1px solid $green;
+}
+
+.contacts__map iframe {
+  width: 320px;
+  height: 454px;
+}
+
+.contacts__button {
+  margin-bottom: 39px;
 }

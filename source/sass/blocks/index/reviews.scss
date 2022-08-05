@@ -1,3 +1,11 @@
+@media (min-width: $tablet-width) {
+
+  .reviews__wrapper {
+    background-image: url("/source/image/review.png");
+    background-repeat: no-repeat;
+  }
+}
+
 .reviews__item {
   margin: 0;
 }
@@ -6,7 +14,7 @@
   font-family: "Open-sans", sans-serif;
   font-size: 15px;
   line-height: 30px;
-  color: #444444;
+  color: $grey;
 }
 
 .reviews__name {
@@ -20,6 +28,10 @@
   line-height: 24px;
 }
 
+.reviews__button__wrapper {
+  display: flex;
+}
+
 .reviews__button {
   width: 130px;
   padding: 0;
@@ -27,8 +39,17 @@
   background-image: url("../image/img-icon/icon-huge-arrow.svg");
   background-repeat: no-repeat;
   background-position: 50%;
-  border: none;
+  background-color: transparent;
+  border: $whisper 1px solid;
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
-// подумать почему у кнопок растояние и как их развернуть
+.reviews__button--next {
+  transform:scaleX(-1);
+  border-left: none;
+}
+
