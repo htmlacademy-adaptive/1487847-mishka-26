@@ -10,7 +10,9 @@
   }
 }
 .product-week_title_wrapper {
+  margin-top: 31px;
   display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
@@ -22,6 +24,7 @@
   font-size: 17px;
   line-height: 20px;
   color: $green;
+  margin: 0;
 }
 
 .product-week__info {
@@ -50,10 +53,12 @@
   font-weight: 700;
   line-height: 24px;
   color: $grey;
+  margin: 0 0 25px 0;
 }
 .product-week__image {
   grid-column: 2;
   grid-row: 2/5;
+  margin-bottom: 25px;
 }
 @media (min-width: $tablet-width) {
   .product-week__button {
