@@ -1,7 +1,7 @@
 .reviews__wrapper {
-    margin-bottom: 38px;
+  margin-bottom: 38px;
 
-@media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: grid;
     background-image: url("/source/image/review.png");
     background-repeat: no-repeat;
@@ -86,8 +86,7 @@
 }
 
 @media (min-width: $tablet-width) {
-
-.reviews__wrapper .reviews__button-form {
+  .reviews__wrapper .reviews__button-form {
     justify-self: end;
     align-self: center;
     grid-column: 2/3;

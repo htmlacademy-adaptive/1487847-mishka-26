@@ -10,12 +10,12 @@
 }
 
 @media (min-width: $tablet-width) {
-.nav-toggle {
+  .nav-toggle {
     display: none;
   }
 }
 
-.nav-toggle--close:before {
+.nav-toggle--close::before {
   content: "";
   background-color: $black;
   position: absolute;
@@ -51,11 +51,9 @@
   left: 0;
   width: 100%;
   height: 2px;
-
 }
 
 .nav-toggle--burger {
-
   .nav-toggle__span {
     top: 6px;
   }
@@ -63,7 +61,7 @@
 
 .nav-toggle--close {
   .nav-toggle__span {
-    top:3px;
+    top: 3px;
     transform: rotate(45deg);
     transition: all 0.3s ease 0s;
   }

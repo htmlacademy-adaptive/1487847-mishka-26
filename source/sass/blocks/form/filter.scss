@@ -16,9 +16,7 @@
 }
 
 @media (min-width: $tablet-width) {
-
-.filter__wrapper--column {
-
+  .filter__wrapper--column {
     flex-direction: column;
   }
 }
@@ -153,8 +151,7 @@
 }
 
 @media (min-width: $tablet-width) {
-
-.filter__wrapper--color {
+  .filter__wrapper--color {
     background-color: $white-smoke;
     margin: 0 -50px;
     padding: 50px;
@@ -162,8 +159,7 @@
 }
 
 @media (min-width: $tablet-width) {
-
-.filter__input--phone {
+  .filter__input--phone {
     background-image: url("../image/img-icon/icon-phone.svg");
   }
 
