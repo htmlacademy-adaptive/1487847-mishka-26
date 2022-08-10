@@ -1,11 +1,15 @@
+
 .about__list {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  margin-bottom: 58px;
 
   @media (min-width: $tablet-width) {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 70px;
+    row-gap: 63px;
   }
 }
 

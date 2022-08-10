@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Интернет-магазин Мишка</title>
-  <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body class="page__body">
@@ -15,7 +14,7 @@
       <a class="logo" href="index.html">
       <img src="image/mishka-logo-mobile.svg" width="86" height="35" alt="логотип мишка">
     </a>
-    <button class="nav-toggle" type="button">
+    <button onclick= "menuToggle()" class="nav-toggle nav-toggle--burger" type="button">
       <span class="nav-toggle__span">
       </span>
       <span class="visually-hidden">
@@ -37,12 +36,12 @@
               Вязание на заказ
             </a>
           </li>
-          <li class="header__item">
+          <li class="header__item header__item--search">
             <a class="header__link" href="#">
-              Поиск по сайту
+              <span class="header__span">Поиск по сайту</span>
             </a>
           </li>
-          <li class="header__item header__item--last-item">
+          <li class="header__item header__item--cart">
             <a class="header__link" href="#">
               Корзина: пока пуста
             </a>
@@ -53,9 +52,12 @@
   </header>
 
   <main class="main-container">
+    <div class="main-container main-container--title-wrapper">
     <h1 class="main-title main-title--index">
       Милые штуки ручной работы для дома
     </h1>
+  </div>
+
     <nav class="main-nav">
       <ul class="main-nav__catalog-list">
 
@@ -133,10 +135,10 @@
       </div>
     </section>
     <section class="about section">
-      <h2 class="section-title">
-        Коротко о нас:
-      </h2>
       <div class="about__wrapper">
+        <h2 class="section-title">
+          Коротко о нас:
+        </h2>
         <ul class="about__list">
 
           <li class="about__item">
@@ -173,7 +175,7 @@
       </div>
       <section class="reviews section">
         <div class="reviews__wrapper">
-          <h2 class="section-title">
+          <h2 class="section-title reviews__title">
             Отзывы
           </h2>
           <div class="reviews__list">
@@ -182,13 +184,15 @@
                 Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
                 В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
               </p>
-              <p class="reviews__name">
-                Анастасия Красильникова
-              </p>
-              <p class="reviews__email">
-                @misssssiskras
-              </p>
             </blockquote>
+          </div>
+          <div class="reviews__autor">
+            <p class="reviews__name">
+              Анастасия Красильникова
+            </p>
+            <p class="reviews__email">
+              @misssssiskras
+            </p>
           </div>
           <div class="reviews__button__wrapper">
             <button class="reviews__button reviews__button--next">
@@ -291,5 +295,6 @@
 
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>

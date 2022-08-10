@@ -1,8 +1,28 @@
-@media (min-width: $tablet-width) {
+.reviews__wrapper {
+    margin-bottom: 38px;
 
-  .reviews__wrapper {
+@media (min-width: $tablet-width) {
+    display: grid;
     background-image: url("/source/image/review.png");
     background-repeat: no-repeat;
+    background-size: contain;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0 -50px;
+    padding: 40px 50px;
+  }
+}
+
+.reviews__title {
+  justify-self: start;
+  align-self: center;
+}
+
+.reviews__list {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/3;
   }
 }
 
@@ -11,7 +31,7 @@
 }
 
 .reviews__text {
-  font-family: "Open-sans", sans-serif;
+  font-family: $main-font;
   font-size: 15px;
   line-height: 30px;
   color: $grey;
@@ -23,13 +43,20 @@
 }
 
 .reviews__email {
-  font-family: "Open-sans", sans-serif;
+  font-family: $main-font;
   font-size: 17px;
   line-height: 24px;
 }
 
 .reviews__button__wrapper {
   display: flex;
+  grid-column: 2/3;
+  grid-row: 3/4;
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+    gap: 35px;
+  }
 }
 
 .reviews__button {
@@ -41,15 +68,32 @@
   background-position: 50%;
   background-color: transparent;
   border: $whisper 1px solid;
-  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     border: none;
+    width: 50px;
   }
 }
 
 .reviews__button--next {
-  transform:scaleX(-1);
+  transform: scaleX(-1);
   border-left: none;
 }
 
+.reviews__autor {
+  justify-self: start;
+  align-self: center;
+}
+
+@media (min-width: $tablet-width) {
+
+.reviews__wrapper .reviews__button-form {
+    justify-self: end;
+    align-self: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    height: 52px;
+    background-color: transparent;
+    width: 175px;
+  }
+}

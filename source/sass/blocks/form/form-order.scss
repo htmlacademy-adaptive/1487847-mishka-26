@@ -1,13 +1,36 @@
+.form-order__title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 177px;
+  background-color: $white-smoke;
+  margin: 0 -30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 -50px;
+  }
+}
+
+.form-order__label-wrapper {
+  display: flex;
+}
+
+.form-order__input-wrapper {
+  width: 320px;
+  border: 1px solid $whisper;
+}
+
 .form-order__text {
-  font-family: "Open-sans", sans-serif;
+  font-family: $main-font;
   font-weight: 400px;
   font-size: 13px;
   line-height: 24px;
-  color: #444444;
+  color: $grey;
 }
 
-.form-order__button {
+.modal__wrapper .form-order__button {
   background-color: $dark-green;
-  color: #ffffff;
+  color: $white;
   border: none;
 }
+
