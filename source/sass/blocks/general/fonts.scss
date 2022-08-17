@@ -1,10 +1,12 @@
+$main-font: "Open-sans", sans-serif;
+$bolt-font: "Open-sans-bold", sans-serif;
 
 @font-face {
   font-family: "Open-sans";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("source/fonts/opensans.woff") format("woff");
+  src: url("../fonts/opensans.woff") format("woff");
 }
 
 @font-face {
@@ -12,7 +14,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("source/fonts/opensans.woff2") format("woff2");
+  src: url("../fonts/opensans.woff2") format("woff2");
 }
 
 @font-face {
@@ -20,7 +22,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("source/fonts/opensansbold.woff") format("woff");
+  src: url("../fonts/opensansbold.woff") format("woff");
 }
 
 @font-face {
@@ -28,5 +30,5 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("source/fonts/opensansbold.woff2") format("woff2");
+  src: url("../fonts/opensansbold.woff2") format("woff2");
 }

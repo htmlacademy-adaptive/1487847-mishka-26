@@ -1,43 +1,170 @@
 .filter__title {
-  color: #63d1bb;
+  color: $dark-green;
+  margin: 0 0 30px;
+}
+
+.filter__wrapper {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    column-gap: 106px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .filter__wrapper--column {
+    flex-direction: column;
+  }
+}
+
+.filter__type {
+  margin-bottom: 84px;
 }
 
 .filter__label {
   font-size: 17px;
   line-height: 18px;
-  color: #000000;
+  color: $black;
+  margin-bottom: 17px;
 }
+
+.filter__list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.filter__list--color {
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
 
 .filter__input-wrapper {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #000000;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 42px;
+  }
 }
 
 .filter__input {
   border: none;
+  border-bottom: 1px solid $black;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: right;
+  min-height: 24px;
 }
 
 .filter__input::placeholder {
-  font-family: "Open-sans", sans-serif;
+  font-family: $main-font;
   font-size: 17px;
   line-height: 18px;
   opacity: 0.3;
+}
+
+.filter__contacts {
+  flex-direction: column;
 }
 
 // одинаковая стилизация обьединить
 
 .filter__area {
-  font-family: "Open-sans", sans-serif;
+  font-family: $main-font;
   font-size: 17px;
   line-height: 18px;
   opacity: 0.3;
+  height: 142px;
+  border: 2px solid $black;
+
+  @media (min-width: $tablet-width) {
+    min-width: 501px;
+    min-height: 142px;
+  }
 }
 
 .filter__text-necessarily {
-  font-family: "Open-sans", sans-serif;
+  font-family: $main-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: #444444;
+  color: $grey;
+}
+
+.filter__control {
+  position: relative;
+  display: block;
+  padding-left: 60px;
+}
+
+.filter__mark {
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 38px;
+  height: 38px;
+  border: 2px solid #242424;
+}
+
+.filter__input[type="checkbox"]:checked + .filter__mark::before,
+.filter__input[type="checkbox"]:checked + .filter__mark::after {
+  position: absolute;
+  top: 10px;
+  right: 7px;
+  width: 23px;
+  height: 16px;
+  background-image: url("../image/img-icon/icon-tick.svg");
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.filter__input[type="radio"] + .filter__mark {
+  border-radius: 50%;
+}
+
+.filter__input[type="radio"]:checked + .filter__mark::before {
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  width: 18px;
+  height: 18px;
+  background-color: $green;
+  border-radius: 50%;
+  content: "";
+}
+
+@media (min-width: $tablet-width) {
+  .filter__wrapper--color {
+    background-color: $white-smoke;
+    margin: 0 -50px;
+    padding: 50px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .filter__input--phone {
+    background-image: url("../image/img-icon/icon-phone.svg");
+  }
+
+  .filter__input--e-mail {
+    background-image: url("../image/img-icon/icon-mail.svg");
+    height: 21px;
+  }
 }

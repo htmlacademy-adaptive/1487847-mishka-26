@@ -1,7 +1,36 @@
+.production-process__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 21px 34px 33px;
+  margin-bottom: 58px;
+  border: 1px solid $whisper;
+}
+
 .production-process__text {
-  font-family: "Open-sans", sans-serif;
+  font-family: $main-font;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
-  color: #444444;
+  color: $grey;
+}
+
+.production-process__title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  @media (min-width: $tablet-width) {
+    order: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .production-process__video {
+    order: -1;
+  }
+}
+
+.production-process__wrapper .production-process__button {
+  width: 192px;
 }
