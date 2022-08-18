@@ -1,6 +1,22 @@
 .filter__title {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
   color: $dark-green;
   margin: 0 0 30px;
+  text-transform: uppercase;
+}
+
+.filter__title::before {
+  content: "";
+  background-color: $border-green;
+  flex: 1;
+  height: 1px;
+  margin-left: 20px;
+}
+
+.filter__title--second {
+  margin: 0;
 }
 
 .filter__wrapper {
@@ -11,31 +27,50 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    align-items: flex-start;
     column-gap: 106px;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .filter__wrapper--column {
+.filter__wrapper--name {
+  @media (min-width: $tablet-width) {
+    padding: 66px 0 50px;
+  }
+
+}
+
+.filter__wrapper--column {
+  gap: 34px;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width){
     flex-direction: column;
   }
 }
 
 .filter__type {
-  margin-bottom: 84px;
+  margin-bottom: 43px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+
+  }
 }
 
 .filter__label {
   font-size: 17px;
   line-height: 18px;
   color: $black;
-  margin-bottom: 17px;
 }
 
 .filter__list {
   display: flex;
   flex-direction: column;
   gap: 50px;
+}
+
+.filter__list--name {
+  gap: 21px;
 }
 
 .filter__list--color {
@@ -66,18 +101,21 @@
 
 .filter__input {
   border: none;
-  border-bottom: 1px solid $black;
+  border-bottom: 2px solid $black;
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: right;
-  min-height: 24px;
+  min-width: 260px;
+  min-height: 50px;
+  padding: 0;
 }
 
-.filter__input::placeholder {
+.filter__input-wrapper .filter__input::placeholder {
   font-family: $main-font;
   font-size: 17px;
   line-height: 18px;
   opacity: 0.3;
+
 }
 
 .filter__contacts {
@@ -90,9 +128,11 @@
   font-family: $main-font;
   font-size: 17px;
   line-height: 18px;
-  opacity: 0.3;
+  color: $black-opacity;
   height: 142px;
-  border: 2px solid $black;
+  box-shadow: inset 0 0 0 2px $black;
+  padding: 17px;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     min-width: 501px;
@@ -106,6 +146,7 @@
   font-size: 14px;
   line-height: 16px;
   color: $grey;
+  margin-bottom: 30px;
 }
 
 .filter__control {
@@ -153,6 +194,7 @@
 @media (min-width: $tablet-width) {
   .filter__wrapper--color {
     background-color: $white-smoke;
+    width: 100%;
     margin: 0 -50px;
     padding: 50px;
   }
@@ -167,4 +209,8 @@
     background-image: url("../image/img-icon/icon-mail.svg");
     height: 21px;
   }
+}
+
+.filter__input--last-type {
+  margin-bottom: 34px;
 }

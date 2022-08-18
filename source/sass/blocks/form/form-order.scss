@@ -1,32 +1,51 @@
-// comment
+.form-order__wrapper {
+  max-width: 1050px;
+}
+
 .form-order__title-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 177px;
   background-color: $white-smoke;
-  margin: 0 -30px;
+  margin: 0 -30px 17px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 -50px;
+    margin: 0 -50px 54px;
+    min-height: 238px;
   }
 }
 
 .form-order__label-wrapper {
   display: flex;
+  margin-bottom: 31px;
+}
+
+.form-order__label {
+  text-align: center;
+  margin: 14px 0 21px;
 }
 
 .form-order__input-wrapper {
   width: 320px;
   border: 1px solid $whisper;
+  padding: 18px 22px;
+  text-align: center;
 }
 
 .form-order__text {
   font-family: $main-font;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 13px;
   line-height: 24px;
   color: $grey;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 616px;
+    font-size: 17px;
+    margin-bottom: 81px;
+  }
 }
 
 .modal__wrapper .form-order__button {

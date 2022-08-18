@@ -1,10 +1,18 @@
+@media (min-width: $tablet-width) {
+  .main-nav {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+}
+
 .main-nav__catalog-list {
   display: flex;
   flex-direction: column;
+  margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: center;
+    width: 100%;
   }
 }
 
@@ -13,11 +21,13 @@
   background-image: url("../image/img-icon/icon-lamp-interior.svg");
   background-repeat: no-repeat;
   background-position: bottom 50% right 30px;
+  padding: 40px 36px;
   margin: 0 -30px;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    width: 100%;
   }
 }
 
@@ -29,5 +39,4 @@
 .main-nav__catalog-link {
   display: block;
   color: $white;
-  margin: 24px 150px 31px 30px;
 }

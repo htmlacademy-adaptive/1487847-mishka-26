@@ -4,7 +4,7 @@
   align-items: center;
   padding: 21px 34px 33px;
   margin-bottom: 58px;
-  border: 1px solid $whisper;
+  outline: 1px solid $whisper;
 }
 
 .production-process__text {
@@ -13,9 +13,11 @@
   font-size: 13px;
   line-height: 24px;
   color: $grey;
+  margin-bottom: 41px;
 }
 
 .production-process__title-wrapper {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 25px;
@@ -25,10 +27,24 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .production-process__video {
+.production-process__video {
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
     order: -1;
   }
+}
+
+.production-process__title-wrapper::before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 76px;
+  background-image: url("../image/img-icon/icon-play-button.svg");
+  background-repeat: no-repeat;
+  top: 120px;
+  left: 50px;
+  z-index: 1;
 }
 
 .production-process__wrapper .production-process__button {

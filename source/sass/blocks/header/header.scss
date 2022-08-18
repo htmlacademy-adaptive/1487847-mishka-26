@@ -24,7 +24,10 @@
   .header__nav {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     position: static;
+    max-height: 89px;
+    max-width: 1150px;
   }
 }
 
@@ -35,6 +38,44 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    gap: 41px;
+  }
+}
+
+.header__list--search-cart {
+  @media (min-width: $tablet-width) {
+    flex-basis: 100%;
+    order: -1;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 50%;
+    order: 0;
+  }
+}
+
+.header__list--spipping {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+  }
+}
+
+.header__list--new-sell {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__list--catalog-modal {
+    margin-right: auto;
   }
 }
 
@@ -42,18 +83,22 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
-  padding: 28px 65px 26px 76px;
+  padding: 28px 42px 26px 76px;
   border-top: 1px solid $whisper;
   background-repeat: no-repeat;
-  background-position: 10% 50%;
+  background-position: 30px 50%;
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 0;
+    border: none;
+  }
 }
 
 .header__item--search {
   background-image: url("../image/img-icon/icon-search.svg");
 
   @media (min-width: $tablet-width) {
-    order: -2;
-    margin-left: 242px;
+    padding: 28px 0 26px 26px;
   }
 }
 
@@ -61,7 +106,15 @@
   background-image: url("../image/img-icon/icon-cart.svg");
 
   @media (min-width: $tablet-width) {
-    order: -1;
+    padding: 28px 0 26px 90px;
+  }
+}
+
+.header__item--spipping-text {
+  font-family: $main-font;
+
+  @media (min-width: $tablet-width) {
+    padding: 28px 0;
   }
 }
 
@@ -80,8 +133,22 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    align-items: flex-start;
-    margin: 0;
+    position: absolute;
+    z-index: 2;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
     width: auto;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("image/mishka-logo-tablet.svg");
+    background-size: $tablet-width auto;
+  }
+
+  @media (min-resolution: 3dppx) {
+    background-image: url("image/mishka-logo-desktop");
+    background-size: $desktop-width auto;
   }
 }

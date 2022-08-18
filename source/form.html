@@ -24,19 +24,22 @@
     </button>
   </div>
 
-    <nav class="header__nav header__nav--hidden">
-      <div class="header__wrapper">
-        <ul class="header__list">
+    <nav class="header__nav">
+
+        <ul class="header__list header__list--catalog-modal">
           <li class="header__item">
             <a class="header__link" href="catalog.html">
               Каталог товаров
             </a>
           </li>
           <li class="header__item">
-            <a class="header__link" href="modal.html">
+            <a class="header__link" href="form.html">
               Вязание на заказ
             </a>
           </li>
+        </ul>
+
+        <ul class="header__list header__list--search-cart">
           <li class="header__item header__item--search">
             <a class="header__link" href="#">
               <span class="header__span">Поиск по сайту</span>
@@ -48,7 +51,28 @@
             </a>
           </li>
         </ul>
-      </div>
+
+        <ul class="header__list header__list--new-sell">
+          <li class="header__item">
+            <a class="header__link" href="#">
+                Новые поступления
+            </a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">
+              Распродажа
+            </a>
+          </li>
+        </ul>
+
+        <ul class="header__list header__list--spipping">
+          <li class="header__item header__item--spipping-text">
+            <a class="header__link" href="#">
+                Бесплатная доставка по России
+            </a>
+          </li>
+        </ul>
+
     </nav>
   </header>
   <main class="form-order">
@@ -168,7 +192,7 @@
                   <p class="filter__title">
                     ФИО
                   </p>
-                  <div class="filter__list">
+                  <div class="filter__list filter__list--name">
                     <div class="filter__input-wrapper">
                     <label class="filter__label" for="Имя">
                       Имя:
@@ -185,7 +209,7 @@
                     <label class="filter__label" for="Отчество">
                       Отчество:
                     </label>
-                    <input class="filter__input" type="text" id="Отчество" name="patronymic" placeholder="Отчество, если желаете">
+                    <input class="filter__input filter__input--last-type" type="text" id="Отчество" name="patronymic" placeholder="Отчество, если желаете">
                   </div>
                 </div>
                 </div>
@@ -193,18 +217,18 @@
                 <div class="filter__wrapper--color">
                   <div class="filter__wrapper filter__wrapper--column">
                     <div class="filter__input-wrapper filter__input-wrapper--contacts">
-                      <p class="filter__title">
+                      <p class="filter__title filter__title--second">
                         тел
                       </p>
-                      <label class="filter__label filter__title" for="pnone-number">
+                      <label class="filter__label" for="pnone-number">
                         <input class="filter__input filter__input--phone" type="tel" id="pnone-number" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
                       </label>
                     </div>
                     <div class="filter__input-wrapper filter__input-wrapper--contacts">
-                      <p class="filter__title">
+                      <p class="filter__title filter__title--second">
                         e-mail
                       </p>
-                      <label class="filter__label filter__title" for="e-mail">
+                      <label class="filter__label" for="e-mail">
                         <input class="filter__input filter__input--e-mail" type="text" id="e-mail" name="email" placeholder="Ваш Email*">
                       </label>
                     </div>
@@ -215,10 +239,9 @@
                   <p class="filter__title">
                     доп
                   </p>
-                  <label class="filter__label filter__title" for="дополнительно">
+                  <label class="filter__label" for="дополнительно">
                   </label>
-                  <textarea class="filter__area" id="дополнительно" name="area">
-                      Опишите все ваши пожелания к заказу
+                  <textarea class="filter__area" id="дополнительно" name="area">Опишите все ваши пожелания к заказу
                     </textarea>
                 </div>
                 <p class="filter__text-necessarily">
