@@ -41,14 +41,13 @@
     align-self: stretch;
     padding: 66px 0 50px;
   }
-
 }
 
 .filter__wrapper--column {
   gap: 34px;
   margin-bottom: 34px;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     flex-direction: column;
   }
 }
@@ -58,7 +57,6 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 66px;
-
   }
 }
 
@@ -80,6 +78,7 @@
   @media (min-width: $tablet-width) {
     width: 100%;
   }
+
   @media (min-width: $desktop-width) {
     gap: 41px;
   }
@@ -140,7 +139,6 @@
   @media (min-width: $tablet-width) {
     padding: 0 35px 15px 15px;
     width: 100%;
-
   }
 }
 
@@ -222,6 +220,7 @@
   &:hover {
     border: 2px solid $green;
   }
+
   &:disabled {
     border: 2px solid $grey;
   }
@@ -254,7 +253,7 @@
   content: "";
 }
 
-  .filter__wrapper--color {
+.filter__wrapper--color {
   @media (min-width: $tablet-width) {
     background-color: $white-smoke;
     width: 100%;
@@ -264,30 +263,29 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 calc((-100vw + 1066px) / 2);
-    padding: 50px calc((100vw - 1066px) / 2); ;
+    padding: 50px calc((100vw - 1066px) / 2);
     align-self: stretch;
     width: auto;
-    }
+  }
 }
 
+.filter__input--phone {
+  background-image: url("../image/img-icon/icon-phone.svg");
+  width: 100%;
 
-  .filter__input--phone {
-    background-image: url("../image/img-icon/icon-phone.svg");
-    width: 100%;
-
-    @media (min-width: $tablet-width) {
-      margin-left: 118px;
-    }
+  @media (min-width: $tablet-width) {
+    margin-left: 118px;
   }
+}
 
-  .filter__input--e-mail {
-    background-image: url("../image/img-icon/icon-mail.svg");
-    width: 100%;
+.filter__input--e-mail {
+  background-image: url("../image/img-icon/icon-mail.svg");
+  width: 100%;
 
-    @media (min-width: $tablet-width) {
-      margin-left: 94px;
-    }
+  @media (min-width: $tablet-width) {
+    margin-left: 94px;
   }
+}
 
 .filter__input--last-type {
   margin-bottom: 34px;

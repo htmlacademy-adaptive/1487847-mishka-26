@@ -58,20 +58,20 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 27px;
-    }
+  }
 
   @media (min-resolution: 2dppx) {
     background-image: url("../image/rabbit-tablet.png");
     background-size: $tablet-width auto;
-    }
+  }
 
   @media (min-resolution: 3dppx) {
     background-image: url("../image/rabbit-desktop.png");
     background-size: $desktop-width auto;
-    }
   }
 }
 
