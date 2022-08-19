@@ -79,6 +79,10 @@
 
 .contacts__item .contacts__link--email {
   position: relative;
+
+  &:hover {
+    color: $green;
+  }
 }
 
 .contacts__link--email::before {
@@ -88,6 +92,10 @@
   height: 1px;
   background-color: $border-green;
   top: 28px;
+
+  &:disabled {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     width: 201px;

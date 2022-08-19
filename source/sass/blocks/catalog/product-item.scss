@@ -2,28 +2,53 @@
   display: flex;
   flex-direction: column;
   padding: 0 28px;
+  min-width: 260px;
   margin-bottom: 30px;
-  outline: 1px solid $whisper;
+  outline: solid 1px $whisper;
+  box-sizing: border-box;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 $black-shadow;
+  }
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 61px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
+    min-width: auto;
+  }
+}
+
+.product-item__link {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+.product-item__icon-cart {
+  fill: $black-opacity;
+
+  &:hover {
+    fill: $green;
+  }
+
+  &:disabled {
+    fill-opacity: 0.3;
   }
 }
 
 .product-item__link-img {
-  grid-row: 2/5;
-  min-height: 404px;
+  grid-row: 1/5;
   margin: 0 -28px;
-}
-
-.product-item__link {
-  align-self: end;
 }
 
 .product-item__img {
@@ -33,6 +58,44 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 27px;
+    }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../image/rabbit-tablet.png");
+    background-size: $tablet-width auto;
+    }
+
+  @media (min-resolution: 3dppx) {
+    background-image: url("../image/rabbit-desktop.png");
+    background-size: $desktop-width auto;
+    }
+  }
+}
+
+.product-item__img--second {
+  @media (min-resolution: 2dppx) {
+    background-image: url("../image/landry-basket-tablet.png");
+    background-size: $tablet-width auto;
+  }
+
+  @media (min-resolution: 3dppx) {
+    background-image: url("../image/landry-basket-desktop.png");
+    background-size: $desktop-width auto;
+  }
+}
+
+.product-item__img--third {
+  @media (min-resolution: 2dppx) {
+    background-image: url("../image/toy-basket-tablet.png");
+    background-size: $tablet-width auto;
+  }
+
+  @media (min-resolution: 3dppx) {
+    background-image: url("../image/toy-basket-desktop.png");
+    background-size: $desktop-width auto;
   }
 }
 

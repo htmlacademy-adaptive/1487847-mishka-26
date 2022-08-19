@@ -1,7 +1,3 @@
-.form-order__wrapper {
-  max-width: 1050px;
-}
-
 .form-order__title-wrapper {
   display: flex;
   align-items: center;
@@ -19,18 +15,29 @@
 .form-order__label-wrapper {
   display: flex;
   margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    gap: 7px;
+  }
 }
 
 .form-order__label {
+  font-family: $main-font;
   text-align: center;
   margin: 14px 0 21px;
+  font-size: 17px;
+  line-height: 30px;
 }
 
 .form-order__input-wrapper {
-  width: 320px;
-  border: 1px solid $whisper;
-  padding: 18px 22px;
+  width: 100%;
+  outline: 2px solid $whisper;
+  padding: 18px 0;
   text-align: center;
+}
+
+.form-order__input-wrapper--checked {
+  outline: 2px solid $green;
 }
 
 .form-order__text {
@@ -46,10 +53,19 @@
     font-size: 17px;
     margin-bottom: 81px;
   }
+  @media (min-width: $desktop-width) {
+    margin: 0 0 62px 225px;
+
+  }
 }
 
 .modal__wrapper .form-order__button {
   background-color: $dark-green;
   color: $white;
   border: none;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }

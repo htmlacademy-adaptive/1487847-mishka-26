@@ -83,6 +83,15 @@
   background-position: 50%;
   background-color: transparent;
   border: $whisper 1px solid;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     border: none;
