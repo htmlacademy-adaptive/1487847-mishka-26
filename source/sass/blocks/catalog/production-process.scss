@@ -76,12 +76,12 @@
   position: relative;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../image/video-tablet.png");
+    background-image: url("../img/video-tablet.png");
     background-size: $tablet-width auto;
   }
 
   @media (min-resolution: 3dppx) {
-    background-image: url("../image/video-desktop.png");
+    background-image: url("../img/video-desktop.png");
     background-size: $desktop-width auto;
   }
 
@@ -100,7 +100,7 @@
   content: "";
   width: 100px;
   height: 76px;
-  background-image: url("../image/img-icon/icon-play-button.svg");
+  background-image: url("../img/img-icon/icon-play-button.svg");
   background-repeat: no-repeat;
   top: 50%;
   left: 50%;

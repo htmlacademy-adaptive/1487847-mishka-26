@@ -66,36 +66,36 @@
   }
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../image/rabbit-tablet.png");
+    background-image: url("../img/rabbit-tablet.png");
     background-size: $tablet-width auto;
   }
 
   @media (min-resolution: 3dppx) {
-    background-image: url("../image/rabbit-desktop.png");
+    background-image: url("../img/rabbit-desktop.png");
     background-size: $desktop-width auto;
   }
 }
 
 .product-item__img--second {
   @media (min-resolution: 2dppx) {
-    background-image: url("../image/landry-basket-tablet.png");
+    background-image: url("../img/landry-basket-tablet.png");
     background-size: $tablet-width auto;
   }
 
   @media (min-resolution: 3dppx) {
-    background-image: url("../image/landry-basket-desktop.png");
+    background-image: url("../img/landry-basket-desktop.png");
     background-size: $desktop-width auto;
   }
 }
 
 .product-item__img--third {
   @media (min-resolution: 2dppx) {
-    background-image: url("../image/toy-basket-tablet.png");
+    background-image: url("../img/toy-basket-tablet.png");
     background-size: $tablet-width auto;
   }
 
   @media (min-resolution: 3dppx) {
-    background-image: url("../image/toy-basket-desktop.png");
+    background-image: url("../img/toy-basket-desktop.png");
     background-size: $desktop-width auto;
   }
 }

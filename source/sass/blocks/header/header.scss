@@ -5,7 +5,10 @@
 }
 
 .header__border {
-  border-top: 1px solid $black-shadow;
+
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid $black-shadow;
+  }
 }
 
 .header__nav {
@@ -184,8 +187,8 @@
 
 .header__icon-svg {
   position: absolute;
-  top: 4px;
-  left: -42px;
+  top: 19px;
+  left: -50px;
   fill: $black-opacity;
 
   &:hover {
@@ -198,6 +201,7 @@
 
   @media (min-width: $tablet-width) {
     top: 8px;
+    left: -42px;
   }
 }
 
@@ -257,12 +261,12 @@
   }
 
   @media (min-resolution: 2dppx) {
-    background-image: url("image/mishka-logo-tablet.svg");
+    background-image: url("img/mishka-logo-tablet.svg");
     background-size: $tablet-width auto;
   }
 
   @media (min-resolution: 3dppx) {
-    background-image: url("image/mishka-logo-desktop");
+    background-image: url("img/mishka-logo-desktop");
     background-size: $desktop-width auto;
   }
 }

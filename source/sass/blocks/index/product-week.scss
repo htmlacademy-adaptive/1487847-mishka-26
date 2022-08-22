@@ -112,7 +112,7 @@
   margin: 0 0 25px 0;
 }
 
-.product-week__image {
+.product-week__img {
   grid-column: 2/7;
   grid-row: 2/5;
   margin-bottom: 25px;
@@ -123,12 +123,12 @@
   }
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../image/triple-set-tablet-1");
+    background-image: url("../img/triple-set-tablet-1");
     background-size: $tablet-width auto;
   }
 
   @media (min-resolution: 3dppx) {
-    background-image: url("../image/triple-set-desktop 1");
+    background-image: url("../img/triple-set-desktop 1");
     background-size: $desktop-width auto;
   }
 }

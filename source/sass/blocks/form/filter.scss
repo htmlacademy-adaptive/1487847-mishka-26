@@ -266,7 +266,7 @@
   right: 7px;
   width: 23px;
   height: 16px;
-  background-image: url("../image/img-icon/icon-tick.svg");
+  background-image: url("../img/img-icon/icon-tick.svg");
   background-repeat: no-repeat;
   content: "";
 
@@ -310,7 +310,7 @@
 }
 
 .filter__input--phone {
-  background-image: url("../image/img-icon/icon-phone.svg");
+  background-image: url("../img/img-icon/icon-phone.svg");
   width: 100%;
 
   @media (min-width: $tablet-width) {
@@ -319,7 +319,7 @@
 }
 
 .filter__input--e-mail {
-  background-image: url("../image/img-icon/icon-mail.svg");
+  background-image: url("../img/img-icon/icon-mail.svg");
   width: 100%;
 
   @media (min-width: $tablet-width) {
