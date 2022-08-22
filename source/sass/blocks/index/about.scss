@@ -24,6 +24,10 @@
     column-gap: 100px;
     row-gap: 57px;
     grid-auto-flow: column;
+
+    @media (min-width: $desktop-width) {
+      column-gap: 0;
+    }
   }
 }
 
@@ -34,4 +38,10 @@
   font-size: 17px;
   line-height: 20px;
   max-width: 253px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 22px;
+    max-width: 325px;
+  }
 }

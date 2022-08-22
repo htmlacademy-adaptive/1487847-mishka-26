@@ -6,6 +6,9 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
+    position: relative;
+    top: 13px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,4 +20,8 @@
 .main-title--index {
   margin: 0 30px;
   max-width: 614px;
+
+  @media (min-width: $desktop-width) {
+    top: 158px;
+  }
 }

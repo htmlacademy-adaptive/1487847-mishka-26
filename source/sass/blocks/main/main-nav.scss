@@ -13,6 +13,7 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     width: 100%;
+    margin-bottom: 71px;
   }
 }
 
@@ -29,6 +30,10 @@
     margin: 0;
     width: 100%;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 27px 36px;
+  }
 }
 
 .main-nav__catalog-item--second-color {
@@ -39,4 +44,10 @@
 .main-nav__catalog-link {
   display: block;
   color: $white;
+
+  @media (min-width: $desktop-width) {
+    max-width: 138px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

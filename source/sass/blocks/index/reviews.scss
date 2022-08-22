@@ -8,6 +8,8 @@
 
   @media (min-width: $desktop-width) {
     padding: 78px 0 96px 175px;
+    background-size: auto;
+    background-position: 0 32px;
   }
 }
 
@@ -31,6 +33,10 @@
   justify-self: start;
   align-self: center;
   margin-bottom: 14px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .reviews__item {
@@ -47,7 +53,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 708px;
+    max-width: 813px;
+    font-size: 17px;
+    margin: 0 0 35px 0;
   }
 }
 
@@ -71,6 +79,11 @@
   @media (min-width: $tablet-width) {
     justify-content: end;
     gap: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 18px;
+    margin-bottom: 38px;
   }
 }
 
@@ -106,8 +119,8 @@
 
 .reviews__autor {
   justify-self: start;
-  align-self: center;
   grid-column: -3/-2;
+  padding-top: 11px;
 }
 
 @media (min-width: $tablet-width) {

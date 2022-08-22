@@ -7,8 +7,8 @@
   margin: 0 -30px 17px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 -50px 54px;
-    min-height: 238px;
+    margin: 0 -50px 67px;
+    min-height: 226px;
   }
 }
 
@@ -51,7 +51,8 @@
   @media (min-width: $tablet-width) {
     max-width: 616px;
     font-size: 17px;
-    margin-bottom: 81px;
+    line-height: 30px;
+    margin-bottom: 78px;
   }
 
   @media (min-width: $desktop-width) {

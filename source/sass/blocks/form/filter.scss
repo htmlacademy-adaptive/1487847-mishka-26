@@ -21,6 +21,8 @@
 
 .filter__title--second {
   margin: 0;
+  min-width: 55px;
+  justify-content: flex-end;
 }
 
 .filter__wrapper {
@@ -32,7 +34,7 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: flex-start;
-    column-gap: 106px;
+    column-gap: 152px;
   }
 }
 
@@ -40,6 +42,7 @@
   @media (min-width: $tablet-width) {
     align-self: stretch;
     padding: 66px 0 50px;
+    column-gap: 126px;
   }
 }
 
@@ -64,16 +67,26 @@
   font-size: 17px;
   line-height: 18px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 19px;
+  }
 }
 
 .filter__list {
   display: flex;
   flex-direction: column;
   gap: 50px;
+
+  @media (min-width: $tablet-width) {
+    gap: 56px;
+    column-gap: 86px;
+  }
 }
 
 .filter__list--name {
-  gap: 21px;
+  gap: 33px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -209,6 +222,12 @@
   padding-left: 60px;
 }
 
+.filter__control--checkbox-label {
+  @media (min-width: $tablet-width) {
+    padding-left: 55px;
+  }
+}
+
 .filter__mark {
   position: absolute;
   left: 0;
@@ -224,6 +243,20 @@
   &:disabled {
     border: 2px solid $grey;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 50px;
+    height: 50px;
+    top: -18px;
+    left: -18px;
+  }
+}
+
+.filter__mark--checkbox {
+  @media (min-width: $tablet-width) {
+    top: -17px;
+    left: -27px;
+  }
 }
 
 .filter__input[type="checkbox"]:checked + .filter__mark::before,
@@ -236,6 +269,13 @@
   background-image: url("../image/img-icon/icon-tick.svg");
   background-repeat: no-repeat;
   content: "";
+
+  @media (min-width: $tablet-width) {
+    width: 32px;
+    height: 22px;
+    top: 14px;
+    right: 9px;
+  }
 }
 
 .filter__input[type="radio"] + .filter__mark {
@@ -244,8 +284,8 @@
 
 .filter__input[type="radio"]:checked + .filter__mark::before {
   position: absolute;
-  top: 11px;
-  left: 10px;
+  top: 15px;
+  left: 16px;
   width: 18px;
   height: 18px;
   background-color: $green;
@@ -257,8 +297,8 @@
   @media (min-width: $tablet-width) {
     background-color: $white-smoke;
     width: 100%;
-    margin: 0 -50px 50px;
-    padding: 50px;
+    margin: 0 -50px;
+    padding: 65px 50px 35px;
   }
 
   @media (min-width: $desktop-width) {

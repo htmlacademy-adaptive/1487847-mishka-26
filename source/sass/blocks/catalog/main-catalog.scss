@@ -2,13 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $white-smoke;
   min-height: 184px;
   text-align: center;
   margin: 0 -30px;
+}
 
-  @media (min-width: $tablet-width) {
-    margin: 0 -50px 79px;
-    min-height: 226px;
-  }
+.main-catalog__title-wrapper {
+  margin: 0 -50px;
+  min-height: 226px;
+  background-color: $white-smoke;
 }

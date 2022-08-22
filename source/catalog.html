@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Каталог-товаров</title>
-  <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body class="page__body">
@@ -31,7 +30,7 @@
     <nav class="header__nav">
 
       <ul class="header__list header__list--catalog-modal">
-        <li class="header__item">
+        <li class="header__item header__item--before">
           <a class="header__link" href="catalog.html">
             Каталог товаров
           </a>
@@ -86,9 +85,11 @@
     </nav>
   </header>
   <main class="main-catalog">
-    <h1 class="main-catalog__title main-title">
-      Каталог-товаров
-    </h1>
+    <div class="main-catalog__title-wrapper header__border">
+      <h1 class="main-catalog__title main-title">
+        Каталог-товаров
+      </h1>
+    </div>
     <section class="catalog section">
       <h2 class="visually-hidden">список товаров</h2>
       <ul class="catalog__list">

@@ -9,9 +9,16 @@
   background-position: 50%;
   background-size: cover;
   margin: 0 -30px;
+  background-color: $background-index;
 
   @media (min-width: $tablet-width) {
     min-height: 627px;
     margin: 0 -49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: 50% 1%;
+    align-items: normal;
+    background-size: 1150px 746px;
   }
 }
