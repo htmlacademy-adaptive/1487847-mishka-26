@@ -4,3 +4,10 @@ function menuToggle() {
   navToggle.classList.toggle('nav-toggle--close');
   navToggle.classList.toggle('nav-toggle--burger');
 }
+
+function openForm() {
+  document.querySelector('.modal').classList.add('modal--open-form');
+}
+function closeForm() {
+  document.querySelector('.modal').classList.remove('modal--open-form');
+}

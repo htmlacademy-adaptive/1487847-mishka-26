@@ -9,9 +9,9 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0 -50px;
-    padding: 35px 0;
+    padding: 35px 30px;
   }
 }
 
@@ -21,6 +21,7 @@
 
 .footer__social-link {
   display: flex;
+  align-items: center;
   gap: 27px;
 }
 

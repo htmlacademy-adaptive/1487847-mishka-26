@@ -1,34 +1,110 @@
 .product-item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 54px;
-  border: 1px solid $whisper;
+  padding: 0 28px;
+  min-width: 260px;
+  margin-bottom: 30px;
+  outline: solid 1px $whisper;
+  box-sizing: border-box;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 $black-shadow;
+  }
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    column-gap: 61px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
+    min-width: auto;
+  }
+}
+
+.product-item__link {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+.product-item__icon-cart {
+  fill: $black-opacity;
+
+  &:hover {
+    fill: $green;
+  }
+
+  &:disabled {
+    fill-opacity: 0.3;
   }
 }
 
 .product-item__link-img {
-  grid-row: 1/3;
+  grid-row: 1/5;
+  margin: 0 -28px;
 }
 
 .product-item__img {
   display: block;
+  border: none;
+  margin-bottom: 27px;
+  font-size: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 27px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/rabbit-tablet.png");
+    background-size: $tablet-width auto;
+  }
+
+  @media (min-resolution: 3dppx) {
+    background-image: url("../img/rabbit-desktop.png");
+    background-size: $desktop-width auto;
+  }
+}
+
+.product-item__img--second {
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/landry-basket-tablet.png");
+    background-size: $tablet-width auto;
+  }
+
+  @media (min-resolution: 3dppx) {
+    background-image: url("../img/landry-basket-desktop.png");
+    background-size: $desktop-width auto;
+  }
+}
+
+.product-item__img--third {
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/toy-basket-tablet.png");
+    background-size: $tablet-width auto;
+  }
+
+  @media (min-resolution: 3dppx) {
+    background-image: url("../img/toy-basket-desktop.png");
+    background-size: $desktop-width auto;
+  }
 }
 
 .product-item__item-wrapper {
   display: flex;
-  gap: 134px;
+  gap: 108px;
   align-items: flex-end;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .product-item__name {
@@ -36,15 +112,22 @@
   line-height: 24px;
 }
 
-.product-item__description-wrapper {
-  padding-top: 27px;
-}
-
 .product-item__description {
+  position: relative;
   font-family: $main-font;
   font-weight: 400;
   font-size: 13px;
   line-height: 30px;
+  margin-bottom: 41px;
+}
+
+.product-item__description::before {
+  position: absolute;
+  content: "";
+  width: 204px;
+  height: 1px;
+  background-color: $whisper;
+  bottom: -18px;
 }
 
 .product-item__price {

@@ -1,36 +1,72 @@
-// comment
 .form-order__title-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 177px;
   background-color: $white-smoke;
-  margin: 0 -30px;
+  margin: 0 -30px 17px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 -50px;
+    margin: 0 -50px 67px;
+    min-height: 226px;
   }
 }
 
 .form-order__label-wrapper {
   display: flex;
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    gap: 7px;
+  }
+}
+
+.form-order__label {
+  font-family: $main-font;
+  text-align: center;
+  margin: 14px 0 21px;
+  font-size: 17px;
+  line-height: 30px;
 }
 
 .form-order__input-wrapper {
-  width: 320px;
-  border: 1px solid $whisper;
+  width: 100%;
+  outline: 2px solid $whisper;
+  padding: 18px 0;
+  text-align: center;
+}
+
+.form-order__input-wrapper--checked {
+  outline: 2px solid $green;
 }
 
 .form-order__text {
   font-family: $main-font;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 13px;
   line-height: 24px;
   color: $grey;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 616px;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 62px 225px;
+  }
 }
 
 .modal__wrapper .form-order__button {
   background-color: $dark-green;
   color: $white;
   border: none;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }

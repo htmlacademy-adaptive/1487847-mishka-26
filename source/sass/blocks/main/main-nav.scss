@@ -1,33 +1,53 @@
+@media (min-width: $tablet-width) {
+  .main-nav {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+}
+
 .main-nav__catalog-list {
   display: flex;
   flex-direction: column;
+  margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: center;
+    width: 100%;
+    margin-bottom: 71px;
   }
 }
 
 .main-nav__catalog-item {
   background-color: $green;
-  background-image: url("../image/img-icon/icon-lamp-interior.svg");
+  background-image: url("../img/img-icon/icon-lamp-interior.svg");
   background-repeat: no-repeat;
   background-position: bottom 50% right 30px;
+  padding: 40px 36px;
   margin: 0 -30px;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 27px 36px;
   }
 }
 
 .main-nav__catalog-item--second-color {
   background-color: $dark-green;
-  background-image: url("../image/img-icon/icon-lego.svg");
+  background-image: url("../img/img-icon/icon-lego.svg");
 }
 
 .main-nav__catalog-link {
   display: block;
   color: $white;
-  margin: 24px 150px 31px 30px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 138px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
