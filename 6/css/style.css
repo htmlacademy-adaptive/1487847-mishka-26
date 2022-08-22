@@ -140,7 +140,7 @@ sup {
 /* Embedded content
    ========================================================================== */
 /**
- * Remove the border on images inside links in IE 10.
+ * Remove the border on imgs inside links in IE 10.
  */
 img {
   border-style: none;
@@ -491,39 +491,39 @@ body {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .product-item__img {
-    background-image: url("../image/rabbit-tablet.png");
+    background-image: url("../img/rabbit-tablet.png");
     background-size: 768px auto;
   }
 }
 @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 3dppx) {
   .product-item__img {
-    background-image: url("../image/rabbit-desktop.png");
+    background-image: url("../img/rabbit-desktop.png");
     background-size: 1150px auto;
   }
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .product-item__img--second {
-    background-image: url("../image/landry-basket-tablet.png");
+    background-image: url("../img/landry-basket-tablet.png");
     background-size: 768px auto;
   }
 }
 @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 3dppx) {
   .product-item__img--second {
-    background-image: url("../image/landry-basket-desktop.png");
+    background-image: url("../img/landry-basket-desktop.png");
     background-size: 1150px auto;
   }
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .product-item__img--third {
-    background-image: url("../image/toy-basket-tablet.png");
+    background-image: url("../img/toy-basket-tablet.png");
     background-size: 768px auto;
   }
 }
 @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 3dppx) {
   .product-item__img--third {
-    background-image: url("../image/toy-basket-desktop.png");
+    background-image: url("../img/toy-basket-desktop.png");
     background-size: 1150px auto;
   }
 }
@@ -648,13 +648,13 @@ body {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .production-process__video {
-    background-image: url("../image/video-tablet.png");
+    background-image: url("../img/video-tablet.png");
     background-size: 768px auto;
   }
 }
 @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 3dppx) {
   .production-process__video {
-    background-image: url("../image/video-desktop.png");
+    background-image: url("../img/video-desktop.png");
     background-size: 1150px auto;
   }
 }
@@ -675,7 +675,7 @@ body {
   content: "";
   width: 100px;
   height: 76px;
-  background-image: url("../image/img-icon/icon-play-button.svg");
+  background-image: url("../img/img-icon/icon-play-button.svg");
   background-repeat: no-repeat;
   top: 50%;
   left: 50%;
@@ -753,7 +753,7 @@ body {
   .contacts__wrapper-text::before {
     position: absolute;
     content: "";
-    background-image: url("../image/img-icon/icon-flag.svg");
+    background-image: url("../img/img-icon/icon-flag.svg");
     background-repeat: no-repeat;
     width: 47px;
     height: 81px;
@@ -1190,7 +1190,7 @@ body {
   right: 7px;
   width: 23px;
   height: 16px;
-  background-image: url("../image/img-icon/icon-tick.svg");
+  background-image: url("../img/img-icon/icon-tick.svg");
   background-repeat: no-repeat;
   content: "";
 }
@@ -1237,7 +1237,7 @@ body {
 }
 
 .filter__input--phone {
-  background-image: url("../image/img-icon/icon-phone.svg");
+  background-image: url("../img/img-icon/icon-phone.svg");
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -1247,7 +1247,7 @@ body {
 }
 
 .filter__input--e-mail {
-  background-image: url("../image/img-icon/icon-mail.svg");
+  background-image: url("../img/img-icon/icon-mail.svg");
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -1362,8 +1362,10 @@ body {
   justify-content: center;
 }
 
-.header__border {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+@media (min-width: 768px) {
+  .header__border {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
 }
 
 .header__nav {
@@ -1542,8 +1544,8 @@ body {
 
 .header__icon-svg {
   position: absolute;
-  top: 4px;
-  left: -42px;
+  top: 19px;
+  left: -50px;
   fill: rgba(0, 0, 0, 0.2);
 }
 .header__icon-svg:hover {
@@ -1555,6 +1557,7 @@ body {
 @media (min-width: 768px) {
   .header__icon-svg {
     top: 8px;
+    left: -42px;
   }
 }
 
@@ -1617,13 +1620,13 @@ body {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .header__logo-wrapper {
-    background-image: url("image/mishka-logo-tablet.svg");
+    background-image: url("img/mishka-logo-tablet.svg");
     background-size: 768px auto;
   }
 }
 @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 3dppx) {
   .header__logo-wrapper {
-    background-image: url("image/mishka-logo-desktop");
+    background-image: url("img/mishka-logo-desktop");
     background-size: 1150px auto;
   }
 }
@@ -1882,32 +1885,28 @@ body {
   margin: 0 0 25px 0;
 }
 
-.product-week__image {
+.product-week__img {
   grid-column: 2/7;
   grid-row: 2/5;
   margin-bottom: 25px;
   justify-self: end;
 }
 @media (min-width: 768px) {
-  .product-week__image {
+  .product-week__img {
     margin: 0;
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-  .product-week__image {
-    background-image: url("../image/triple-set-tablet-1");
+  .product-week__img {
+    background-image: url("../img/triple-set-tablet-1");
     background-size: 768px auto;
   }
 }
 @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 3dppx) {
-  .product-week__image {
-    background-image: url("../image/triple-set-desktop 1");
+  .product-week__img {
+    background-image: url("../img/triple-set-desktop 1");
     background-size: 1150px auto;
   }
-}
-
-.product-week__img {
-  display: block;
 }
 
 @media (min-width: 768px) {
@@ -1919,7 +1918,7 @@ body {
 }
 @media (min-width: 768px) {
   .reviews {
-    background-image: url("../image/review.png");
+    background-image: url("../img/review.png");
     background-repeat: no-repeat;
     background-size: contain;
     margin: 0 -49px;
@@ -2018,7 +2017,7 @@ body {
   width: 130px;
   padding: 0;
   min-height: 52px;
-  background-image: url("../image/img-icon/icon-huge-arrow.svg");
+  background-image: url("../img/img-icon/icon-huge-arrow.svg");
   background-repeat: no-repeat;
   background-position: 50%;
   background-color: transparent;
@@ -2082,7 +2081,7 @@ body {
   justify-content: center;
   text-align: center;
   min-height: 300px;
-  background-image: url("../image/hero-mobile.png");
+  background: url("../img/hero-mobile.png");
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
@@ -2124,7 +2123,7 @@ body {
 
 .main-nav__catalog-item {
   background-color: #63d1bb;
-  background-image: url("../image/img-icon/icon-lamp-interior.svg");
+  background-image: url("../img/img-icon/icon-lamp-interior.svg");
   background-repeat: no-repeat;
   background-position: bottom 50% right 30px;
   padding: 40px 36px;
@@ -2145,7 +2144,7 @@ body {
 
 .main-nav__catalog-item--second-color {
   background-color: #56c3b2;
-  background-image: url("../image/img-icon/icon-lego.svg");
+  background-image: url("../img/img-icon/icon-lego.svg");
 }
 
 .main-nav__catalog-link {
