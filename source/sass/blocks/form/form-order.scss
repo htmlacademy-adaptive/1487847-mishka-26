@@ -1,13 +1,26 @@
+.form-order__filter {
+  width: auto;
+}
+
+.form-order{
+  width: 100%;
+}
+
+.form-order__title-wrapper .form-order__title {
+  position: static;
+}
+
 .form-order__title-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 177px;
   background-color: $white-smoke;
-  margin: 0 -30px 17px;
+  margin-bottom:  17px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
-    margin: 0 -50px 67px;
+    margin-bottom: 67px;
     min-height: 226px;
   }
 }
@@ -46,18 +59,19 @@
   font-size: 13px;
   line-height: 24px;
   color: $grey;
+  padding: 0 30px;
   margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     max-width: 616px;
     font-size: 17px;
     line-height: 30px;
-    margin-bottom: 78px;
+    margin: 0 auto 78px;
   }
 
-  @media (min-width: $desktop-width) {
-    margin: 0 0 62px 225px;
-  }
+  // @media (min-width: $desktop-width) {
+  //   margin: 0 0 62px 225px;
+  // }
 }
 
 .modal__wrapper .form-order__button {

@@ -1,12 +1,13 @@
 .section-title {
   font-size: 25px;
   line-height: 30px;
-  margin: 0;
+  margin: 0 0 5px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
     text-align: start;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {

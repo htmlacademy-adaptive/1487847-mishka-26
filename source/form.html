@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Форма заказа товара</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css"/>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин Мишка</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
 <body class="page__body">
   <header class="header">
 
@@ -94,7 +113,7 @@
       <p class="form-order__text">
         Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
       </p>
-      <section class="form-order__filter section">
+      <section class="form-order__filter">
         <h2 class="visually-hidden">
           Фильтр товаров
         </h2>
@@ -129,75 +148,78 @@
             </fieldset>
 
             <fieldset class="filter__color filter__wrapper filter__wrapper--color">
-              <p class="filter__legend filter__title">
-                цвет
-              </p>
-              <ul class="filter__list filter__list--color">
-                <li class="filter__item">
-                  <label class="filter__control filter__control--checkbox-label">
-                    <input class="visually-hidden filter__input" type="checkbox" name="белый" checked />
-                    <span class="filter__mark filter__mark--checkbox">
-                    </span>
-                    <span class="filter__label">
-                      Белый
-                    </span>
-                  </label>
-                </li>
-                <li class="filter__item">
-                  <label class="filter__control filter__control--checkbox-label">
-                    <input class="visually-hidden filter__input" type="checkbox" name="серый" checked />
-                    <span class="filter__mark filter__mark--checkbox">
-                    </span>
-                    <span class="filter__label">
-                      Серый
-                    </span>
-                  </label>
-                </li>
-                <li class="filter__item">
-                  <label class="filter__control filter__control--checkbox-label">
-                    <input class="visually-hidden filter__input" type="checkbox" name="тиффани" />
-                    <span class="filter__mark filter__mark--checkbox">
-                    </span>
-                    <span class="filter__label">
-                      Тиффани
-                    </span>
-                  </label>
-                </li>
-                <li class="filter__item">
-                  <label class="filter__control filter__control--checkbox-label">
-                    <input class="visually-hidden filter__input" type="checkbox" name="черный" />
-                    <span class="filter__mark filter__mark--checkbox">
-                    </span>
-                    <span class="filter__label">
-                      Черный
-                    </span>
-                  </label>
-                </li>
-                <li class="filter__item">
-                  <label class="filter__control filter__control--checkbox-label">
-                    <input class="visually-hidden filter__input" type="checkbox" name="розовый" />
-                    <span class="filter__mark filter__mark--checkbox">
-                    </span>
-                    <span class="filter__label">
-                      Розовый
-                    </span>
-                  </label>
-                </li>
-                <li class="filter__item">
-                  <label class="filter__control filter__control--checkbox-label">
-                    <input class="visually-hidden filter__input" type="checkbox" name="оранжевый" />
-                    <span class="filter__mark filter__mark--checkbox">
-                    </span>
-                    <span class="filter__label">
-                      Оранжевый
-                    </span>
-                  </label>
-                </li>
-              </ul>
+              <div class="filter__inner">
+                <p class="filter__legend filter__title">
+                  цвет
+                </p>
+                <ul class="filter__list filter__list--color">
+                  <li class="filter__item">
+                    <label class="filter__control filter__control--checkbox-label">
+                      <input class="visually-hidden filter__input" type="checkbox" name="белый" checked />
+                      <span class="filter__mark filter__mark--checkbox">
+                      </span>
+                      <span class="filter__label">
+                        Белый
+                      </span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label class="filter__control filter__control--checkbox-label">
+                      <input class="visually-hidden filter__input" type="checkbox" name="серый" checked />
+                      <span class="filter__mark filter__mark--checkbox">
+                      </span>
+                      <span class="filter__label">
+                        Серый
+                      </span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label class="filter__control filter__control--checkbox-label">
+                      <input class="visually-hidden filter__input" type="checkbox" name="тиффани" />
+                      <span class="filter__mark filter__mark--checkbox">
+                      </span>
+                      <span class="filter__label">
+                        Тиффани
+                      </span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label class="filter__control filter__control--checkbox-label">
+                      <input class="visually-hidden filter__input" type="checkbox" name="черный" />
+                      <span class="filter__mark filter__mark--checkbox">
+                      </span>
+                      <span class="filter__label">
+                        Черный
+                      </span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label class="filter__control filter__control--checkbox-label">
+                      <input class="visually-hidden filter__input" type="checkbox" name="розовый" />
+                      <span class="filter__mark filter__mark--checkbox">
+                      </span>
+                      <span class="filter__label">
+                        Розовый
+                      </span>
+                    </label>
+                  </li>
+                  <li class="filter__item">
+                    <label class="filter__control filter__control--checkbox-label">
+                      <input class="visually-hidden filter__input" type="checkbox" name="оранжевый" />
+                      <span class="filter__mark filter__mark--checkbox">
+                      </span>
+                      <span class="filter__label">
+                        Оранжевый
+                      </span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
             </fieldset>
 
             <fieldset class="filter__contacts filter__wrapper form-contacts">
-                <div class="filter__wrapper filter__wrapper--name">
+                <div class="filter__wrapper filter__inner filter__wrapper--name">
                   <p class="filter__title">
                     ФИО
                   </p>
@@ -224,8 +246,8 @@
                 </div>
 
                 <div class="filter__wrapper--color">
-                  <div class="filter__wrapper filter__wrapper--column">
-                    <div class="filter__input-wrapper filter__input-wrapper--contacts">
+                  <div class="filter__wrapper filter__inner  filter__wrapper--column">
+                    <div class="filter__input-wrapper  filter__input-wrapper--contacts">
                       <p class="filter__title filter__title--second">
                         тел
                       </p>
@@ -244,16 +266,16 @@
                   </div>
                 </div>
 
-                <div class="filter__input-wrapper filter__input-wrapper--textarea">
+                <div class="filter__input-wrapper filter__inner  filter__input-wrapper--textarea">
                   <p class="filter__title">
                     доп
                   </p>
                   <label class="filter__label" for="дополнительно">
                   </label>
-                  <textarea class="filter__area" id="дополнительно" name="area">Опишите все ваши пожелания к заказу
+                  <textarea class="filter__area" id="дополнительно" name="area" placeholder="Опишите все ваши пожелания к заказу">
                     </textarea>
                 </div>
-                <div class="filter__text-button-wrapper">
+                <div class="filter__text-button-wrapper filter__inner ">
                   <p class="filter__text-necessarily">
                     *Поля обязательны для заполнения
                   </p>
@@ -268,15 +290,15 @@
     </div>
   </main>
   <footer class="footer">
+    <div class="footer__color">
+      <div class="footer__wrapper">
+        <h2 class="visually-hidden">ссылки на социальные сети.</h2>
 
-    <div class="footer__wrapper">
-      <h2 class="visually-hidden">ссылки на социальные сети.</h2>
-
-      <div class="footer__logo">
+        <div class="footer__logo">
           <a class="logo logo--footer" href="index.html">
-            <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="логотип мишка">
+            <img src="img//img-icon/icon-logo-footer.svg" width="102" height="34" alt="логотип мишка">
           </a>
-      </div>
+        </div>
 
         <ul class="footer__list footer__list--row">
           <li class="footer__social-item">
@@ -323,7 +345,9 @@
           </span>
         </div>
 
+      </div>
     </div>
+
   </footer>
   <script src="js/script.js"></script>
 </body>

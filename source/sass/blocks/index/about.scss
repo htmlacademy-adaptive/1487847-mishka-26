@@ -1,47 +1,92 @@
 .about__wrapper {
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 0 175px;
   }
 }
 
 .about__wrapper .about__title {
-  margin-bottom: 28px;
+  margin-bottom: 81px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 41px;
+    margin-bottom: 96px;
   }
 }
 
 .about__list {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 83px;
   margin-bottom: 58px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    column-gap: 100px;
-    row-gap: 57px;
+    column-gap: 84px;
+    row-gap: 111px;
     grid-auto-flow: column;
+    margin-bottom: 81px;
 
     @media (min-width: $desktop-width) {
-      column-gap: 0;
+      column-gap: 90px;
+      margin-bottom: 55px;
     }
   }
 }
 
 .about__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 16px;
   font-size: 17px;
   line-height: 20px;
-  max-width: 253px;
+  max-width: 260px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
+    max-width: 320px;
+  }
+
+  @media (min-width: $desktop-width) {
     max-width: 325px;
   }
+}
+
+.about__item--first-column {
+  max-width: 300px;
+}
+
+.about__img {
+  position: absolute;
+  top:-54px;
+}
+
+.about__img--flowers {
+  left: 8px;
+}
+
+.about__img--heart {
+  left: 7px;
+  top: -49px;
+}
+
+.about__img--skein-tread {
+  left: 3px;
+  top:-53px;
+}
+
+.about__img--rocket {
+  left: -7px;
+  top: -52px;
+}
+
+.about__img--gift-box {
+  left: 2px;
 }
