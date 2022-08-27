@@ -49,7 +49,7 @@
   top: 39px;
   left: 34px;
 
-  @media (min-width: $tablet-width)  {
+  @media (min-width: $tablet-width) {
     top: -4px;
     left: 40px;
   }
@@ -64,7 +64,7 @@
   margin-bottom: 40px;
   padding: 0 32px;
 
-  @media (min-width: $tablet-width)  {
+  @media (min-width: $tablet-width) {
     font-size: 15px;
     line-height: 2;
     padding: 0;
@@ -78,12 +78,12 @@
 .production-process__title-wrapper {
   position: relative;
   align-items: center;
-  padding:  27px 13px 27px 91px;
+  padding: 27px 13px 27px 91px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 24px;
     order: 0;
-    padding:  0 13px 0 106px;
+    padding: 0 13px 0 106px;
   }
 
   @media (min-width: $desktop-width) {

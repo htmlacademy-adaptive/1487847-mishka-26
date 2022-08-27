@@ -119,7 +119,7 @@
     font-size: 15px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 35px 0 33px;
   }
 }
@@ -147,15 +147,13 @@
 }
 
 .header__link--upper-text {
-
   @media (min-width: $desktop-width) {
     font-size: 17px;
-  line-height: 1.41;
+    line-height: 1.41;
   }
 }
 
 .header__item--search {
-
   @media (min-width: $tablet-width) {
     position: relative;
     padding: 28px 0 26px 26px;
@@ -246,10 +244,10 @@
     font-size: 15px;
     line-height: 14px;
   }
+
   @media (min-width: $tablet-width) {
     padding-top: 22px;
   }
-
 }
 
 @media (min-width: $tablet-width) {
