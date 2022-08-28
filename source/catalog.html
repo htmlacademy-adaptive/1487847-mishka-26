@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Каталог-товаров</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css"/>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин Мишка</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
 <body class="page__body">
   <header class="header">
 
@@ -97,14 +116,16 @@
 
           <a class="product-item__link-img" href="#">
             <picture>
-              <source media="(min-width: 1150px)" srcset="img/img-catalog/rabbit-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/img-catalog/rabbit-tablet.png">
-              <img class="product-item__img" src="img/img-catalog/rabbit.jpg" alt="зайчик-попрыгайчик">
+              <source media="(min-width: 1150px)" srcset="img/img-catalog/rabbit-desktop.png, img/img-catalog/rabbit-desktop-2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/img-catalog/rabbit-tablet.png, img/img-catalog/rabbit-tablet-2x.png 2x">
+              <img class="product-item__img" src="img/img-catalog/rabbit-mobile.png" srcset="img/img-catalog/rabbit-mobile-2x.png 2x" alt="зайчик-попрыгайчик">
             </picture>
           </a>
 
           <a class="product-item__link" href="#">
-            Зайчик-попрыгайчик
+            <p class="product-item__name">
+              Зайчик-попрыгайчик
+            </p>
           </a>
 
           <p class="product-item__description">
@@ -126,9 +147,9 @@
         <li class="product-item">
           <a class="product-item__link-img" href="#">
             <picture>
-              <source media="(min-width: 1150px)" srcset="img/img-catalog/landry-basket-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/img-catalog/landry-basket-tablet.png">
-              <img class="product-item__img product-item__img--second" src="img/img-catalog/landry-basket.jpg" alt="корзина для белья">
+              <source media="(min-width: 1150px)" srcset="img/img-catalog/landry-basket-desktop.png, img/img-catalog/landry-basket-desktop-2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/img-catalog/landry-basket-tablet.png, img/img-catalog/landry-basket-tablet-2x.png 2x">
+              <img class="product-item__img product-item__img--second" src="img/img-catalog/landry-basket-mobile.png" srcset="img/img-catalog/landry-basket-mobile-2x.png 2x" alt="корзина для белья">
             </picture>
           </a>
           <a class="product-item__link" href="#">
@@ -155,18 +176,18 @@
         <li class="product-item">
           <a class="product-item__link-img" href="#">
             <picture>
-              <source media="(min-width: 1150px)" srcset="img/img-catalog/toy-basket-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/img-catalog/toy-basket-tablet.png">
-              <img class="product-item__img product-item__img--third" src="img/img-catalog/toy-basket.jpg" alt="большая корзина для игрушек">
+              <source media="(min-width: 1150px)" srcset="img/img-catalog/toy-basket-desktop.png, img/img-catalog/toy-basket-desktop-2x 2x.png ">
+              <source media="(min-width: 768px)" srcset="img/img-catalog/toy-basket-tablet.png, img/img-catalog/toy-basket-tablet-2x 2x.png ">
+              <img class="product-item__img product-item__img--third" src="img/img-catalog/toy-basket.jpg" srcset="img/img-catalog/toy-basket-mobile-2x.png 2x" alt="большая корзина для игрушек">
             </picture>
           </a>
           <a class="product-item__link" href="#">
-            <p class="product-item__name">
+            <p class="product-item__name product-item__name--two-strings">
               Большая корзинка для игрушек
             </p>
           </a>
 
-          <p class="product-item__description">
+          <p class="product-item__description product-item__description--two-string">
             Диаметр 30 см, высота 30 см
           </p>
 
@@ -210,15 +231,15 @@
     </section>
   </main>
   <footer class="footer">
+    <div class="footer__color">
+      <div class="footer__wrapper">
+        <h2 class="visually-hidden">ссылки на социальные сети.</h2>
 
-    <div class="footer__wrapper">
-      <h2 class="visually-hidden">ссылки на социальные сети.</h2>
-
-      <div class="footer__logo">
+        <div class="footer__logo">
           <a class="logo logo--footer" href="index.html">
-            <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="логотип мишка">
+            <img src="img//img-icon/icon-logo-footer.svg" width="102" height="34" alt="логотип мишка">
           </a>
-      </div>
+        </div>
 
         <ul class="footer__list footer__list--row">
           <li class="footer__social-item">
@@ -265,7 +286,9 @@
           </span>
         </div>
 
+      </div>
     </div>
+
   </footer>
   <script src="js/script.js"></script>
 </body>

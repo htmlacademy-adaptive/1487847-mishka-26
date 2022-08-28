@@ -15,11 +15,16 @@
   flex-direction: column;
   box-sizing: border-box;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   background-color: $white;
   top: 82px;
   left: -30px;
   right: -30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+    z-index: 1;
+  }
 }
 
 .header__nav--show {
@@ -81,6 +86,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    gap: 64px;
   }
 }
 
@@ -94,7 +100,7 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
-  padding: 27px 42px 26px 76px;
+  padding: 27px 42px 26px 105px;
   border-top: 1px solid $whisper;
   background-repeat: no-repeat;
   background-position: 30px 50%;
@@ -108,9 +114,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 26px 0;
+    padding: 27px 0 33px;
     border: none;
     font-size: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 35px 0 33px;
   }
 }
 
@@ -134,6 +144,13 @@
 .header__link {
   position: relative;
   padding: 15px 0;
+}
+
+.header__link--upper-text {
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+    line-height: 1.41;
+  }
 }
 
 .header__item--search {
@@ -167,12 +184,12 @@
 
 .header__item--cart {
   @media (min-width: $tablet-width) {
-    padding: 32px 0 26px 94px;
+    padding: 32px 3px 26px 94px;
     font-size: 17px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 34px 0 26px 94px;
+    padding: 36px 0 26px 94px;
   }
 }
 
@@ -187,7 +204,7 @@
 .header__icon-svg {
   position: absolute;
   top: 19px;
-  left: -50px;
+  left: -42px;
   fill: $black-opacity;
 
   &:hover {
@@ -207,8 +224,8 @@
 .header__icon-svg--cart {
   width: 21px;
   height: 18px;
-  top: 15px;
-  left: -52px;
+  top: 17px;
+  left: -45px;
 
   @media (min-width: $tablet-width) {
     top: 18px;
@@ -224,9 +241,12 @@
   font-family: $main-font;
 
   @media (min-width: $tablet-width) {
-    padding: 28px 0;
     font-size: 15px;
     line-height: 14px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 22px;
   }
 }
 
@@ -239,34 +259,24 @@
 .header__logo-wrapper {
   display: flex;
   align-items: center;
-  padding: 22px 0;
+  padding: 20px 31px 3px 31px;
   // border-bottom: 1px solid $whisper;
-  margin: 0 -30px;
+
   width: 100%;
 
   @media (min-width: $tablet-width) {
     position: absolute;
     width: auto;
     z-index: 2;
-    left: 30px;
+    left: 17px;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
     width: auto;
-    top: 50%;
-    left: 53%;
-    transform: translate(-52%, -50%);
-  }
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("img/mishka-logo-tablet.svg");
-    background-size: $tablet-width auto;
-  }
-
-  @media (min-resolution: 3dppx) {
-    background-image: url("img/mishka-logo-desktop");
-    background-size: $desktop-width auto;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 

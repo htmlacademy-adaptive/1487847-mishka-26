@@ -3,22 +3,35 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-height: 300px;
-  background: url("../img/hero-mobile.png");
+  background: url("../img/hero-mobile-mob.png");
+  padding-top: 75px;
+  padding-bottom: 103px;
   background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: cover;
-  margin: 0 -30px;
+  background-position: 49.7% 20%;
   background-color: $background-index;
 
   @media (min-width: $tablet-width) {
-    min-height: 627px;
-    margin: 0 -49px;
+    background: url("../img/hero-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 1150px 746px;
+    background-position: 50% 1%;
+    padding-top: 265px;
+    padding-bottom: 260px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-mobile-2x.png");
+      background-size: cover;
+    }
   }
 
   @media (min-width: $desktop-width) {
     background-position: 50% 1%;
     align-items: normal;
-    background-size: 1150px 746px;
+    padding-top: 253px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-mobile-2x.png");
+      background-size: contain;
+    }
   }
 }

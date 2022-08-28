@@ -1,27 +1,38 @@
-
 .main-title {
   font-size: 27px;
-  line-height: 30px;
+  line-height: 1.1;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
-    line-height: 50px;
+    line-height: 1.16;
     position: relative;
-    top: 13px;
+    top: -111px;
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 53px;
-    line-height: 57px;
+    line-height: 1.07;
+    top: 13px;
   }
 }
 
 .main-title--index {
-  margin: 0 30px;
-  max-width: 614px;
+  padding: 0 30px;
+  max-width: 245px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 668px;
+
+    br {
+      display: none;
+    }
+  }
 
   @media (min-width: $desktop-width) {
-    top: 158px;
+    font-size: 53px;
+    line-height: 1.07;
+    position: relative;
+    top: -96px;
+    max-width: 700px;
   }
 }
