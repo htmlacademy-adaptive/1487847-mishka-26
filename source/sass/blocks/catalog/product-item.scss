@@ -152,11 +152,16 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 28px;
+    margin-bottom: 64px;
   }
 }
 
 .product-item__description--two-string {
   margin-bottom: 42px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 37px;
+  }
 }
 
 .product-item__price {
