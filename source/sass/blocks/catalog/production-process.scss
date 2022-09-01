@@ -15,6 +15,10 @@
   margin-bottom: 90px;
   border: 1px solid $whisper;
 
+  &:hover {
+    box-shadow: 0 6px 10px 0 $black-shadow;
+  }
+
   @media (min-width: $tablet-width) {
     align-items: stretch;
     padding: 0;
@@ -24,6 +28,8 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 173px 1fr;
+    margin-bottom: 103px;
   }
 }
 
@@ -53,6 +59,11 @@
     top: -4px;
     left: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 48px;
+    left: 80px;
+  }
 }
 
 .production-process__text {
@@ -72,6 +83,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 252px;
+    margin-bottom: 52px;
   }
 }
 
@@ -89,7 +101,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
     gap: 0;
-    padding: 45px 0 0 79px;
+    padding: 97px 0 0 79px;
     align-items: flex-start;
     height: auto;
   }
@@ -133,6 +145,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+  transition: 0.3s;
 
   &:hover {
     transform: translate(-50%, -47%) scale(1.2);

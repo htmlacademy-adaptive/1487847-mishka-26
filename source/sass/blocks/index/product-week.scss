@@ -27,28 +27,24 @@
   position: absolute;
   content: "";
   background-image: url("../img/zigzag-line-mobile.svg");
-  background-repeat: no-repeat;
-  width: 320px;
+  background-repeat: repeat-x;
+  width: 100%;
   height: 6px;
   bottom: -41px;
   left: 0;
 
   @media (min-width: $tablet-width) {
-    width: 772px;
     height: 17px;
     left: 0;
     bottom: -67px;
     background-image: url("../img/zigzag-line-inner-tablet.svg");
-    background-repeat: no-repeat;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1050px;
     height: 23px;
     bottom: -98px;
     left: 0;
     background-image: url("../img/zigzag-line-inner.svg");
-    background-repeat: no-repeat;
   }
 }
 

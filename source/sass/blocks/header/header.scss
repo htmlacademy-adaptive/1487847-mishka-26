@@ -205,6 +205,15 @@
   position: absolute;
   top: 19px;
   left: -42px;
+
+
+  @media (min-width: $tablet-width) {
+    top: 8px;
+    left: -42px;
+  }
+}
+
+.cart-icon {
   fill: $black-opacity;
 
   &:hover {
@@ -213,11 +222,6 @@
 
   &:disabled {
     fill-opacity: 0.3;
-  }
-
-  @media (min-width: $tablet-width) {
-    top: 8px;
-    left: -42px;
   }
 }
 
@@ -259,7 +263,7 @@
 .header__logo-wrapper {
   display: flex;
   align-items: center;
-  padding: 20px 31px 3px 31px;
+  padding: 20px 13px 23px 31px;
   // border-bottom: 1px solid $whisper;
 
   width: 100%;
@@ -275,7 +279,7 @@
   @media (min-width: $desktop-width) {
     width: auto;
     top: 54%;
-    left: 50%;
+    left: 49%;
     transform: translate(-50%, -50%);
   }
 }

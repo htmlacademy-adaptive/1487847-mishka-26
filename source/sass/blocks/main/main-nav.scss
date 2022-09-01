@@ -67,12 +67,17 @@
   background-color: $green;
   box-sizing: border-box;
   z-index: 1;
+  transition: all 0.3s ease-in-out;
 
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
     margin: 0;
     width: 100%;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
   }
 }
 
@@ -87,7 +92,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 119px;
-    padding: 25px 0 15px 36px;
+    padding: 25px 0 0 36px;
     box-sizing: border-box;
   }
 

@@ -5,22 +5,21 @@
 .contacts::before {
   @media (min-width: $tablet-width) {
     position: absolute;
+    width: 100%;
     content: "";
-    width: 772px;
     height: 17px;
     background-image: url("../img/zigzag-line-inner-tablet.svg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     top: -85px;
     left: 0;
+    right: 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1050px;
     height: 23px;
     top: 61px;
     left: 0;
     background-image: url("../img/zigzag-line-inner.svg");
-    background-repeat: no-repeat;
   }
 }
 
@@ -40,8 +39,10 @@
 .contacts__wrapper-text .contacts__title {
   margin-bottom: 28px;
 
+
   @media (min-width: $tablet-width) {
     margin: 0 0 49px 20px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -55,6 +56,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 49px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -66,28 +68,16 @@
   }
 }
 
-.contacts__wrapper-text::before {
-  position: absolute;
-  content: "";
-  background-image: url("../img/zigzag-line-mobile.svg");
-  background-repeat: no-repeat;
-  width: 320px;
-  height: 6px;
-  top: -45px;
-  right: 0;
-
+.contacts__wrapper-text::after {
   @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
     background-image: url("../img/img-icon/icon-flag.svg");
     background-repeat: no-repeat;
     width: 47px;
     height: 81px;
-    top: -22px;
+    top: -25px;
     right: 57px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 217px;
-    left: 63px;
   }
 }
 
@@ -146,7 +136,7 @@
   width: 167px;
   height: 1px;
   background-color: $border-green;
-  top: 34px;
+  top: 28px;
 
   &:disabled {
     opacity: 0.3;
@@ -171,6 +161,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    background-image: url("../img/map-desktop-1.png");
     position: absolute;
     right: 0;
     bottom: 106px;
@@ -181,12 +172,17 @@
 
 .contacts__map-img {
   position: absolute;
-  top: 33%;
-  left: 43%;
+  top: 147px;
+  left: 138px;
 
   @media (min-width: $tablet-width) {
-    top: 147px;
-    left: 238px;
+    top: 139px;
+    left: 362px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 146px;
+    left: 239px;
   }
 }
 
