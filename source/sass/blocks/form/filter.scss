@@ -415,7 +415,7 @@
   right: 7px;
   width: 23px;
   height: 16px;
-  background-image: url("../img/img-icon/icon-tick.svg");
+  background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   content: "";
 
@@ -475,19 +475,16 @@
   }
 }
 
-.filter__input:hover + .filter__input-icon {
-  opacity: 1;
-  fill: $green;
-}
-
 .filter__input-icon {
   position: absolute;
-  fill: $black;
-  opacity: 0.2;
+  fill: $black-opacity;
   right: 8px;
   bottom: 17px;
 }
 
+.filter__input:hover + .filter__input-icon {
+  fill: $green;
+}
 
 .filter__input--e-mail {
   background-image: url("../img/img-icon/icon-mail.svg");
