@@ -9,7 +9,10 @@ import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoos from 'gulp-libsquoosh';
+import del from 'del';
 import svgo from 'gulp-svgo';
+import svgstore from 'gulp-svgstore';
+
 
 // Styles
 
@@ -45,25 +48,57 @@ const optimazeimages = () => {
   .pipe(gulp.dest('build/img'));
 }
 
-export const copyimages = () => {
+const copyimages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(gulp.dest('build/img'));
 }
-// WEB-P 
-export const wepP = () => {
+// WEB-P
+const wepP = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(squoos({webp:{}}))
   .pipe(gulp.dest('build/img'))
 }
 // svg
-export const svgOpt = () => {
-  return gulp.src('source/img/*.svg')
+const svgOpt = () => {
+  return gulp.src([ 'source/img/background-svg/*.svg',
+  'source/img/img-about/*.svg',
+  'source/img/img-icon/*.svg',
+  'source/img/logo-svg/*.svg',
+  '!source/img/svg-sprite/*.svg'
+] )
   .pipe (svgo())
   .pipe (gulp.dest('build/img'))
 }
+
+const svgSprite = () => {
+  return gulp.src('source/img/svg-sprite/*.svg')
+  .pipe (svgo())
+  .pipe (svgstore({
+    inlineSvg: true
+  }))
+  .pipe (rename('sprite.svg'))
+  .pipe (gulp.dest('build/img'))
+}
+
+// copy
+const copy = (done) => {
+  gulp.src ([
+    'source/fonts/*.{woff2,woff}',
+    'source/*.ico',]
+    , {
+      base: 'source'
+    })
+    .pipe(gulp.dest('build'))
+    done();
+  }
+//clean
+const clean = () => {
+  return del('build');
+};
+// }
 // Server
 
-const server = (done) => {
+function server(done) {
   browser.init({
     server: {
       baseDir: 'build'
@@ -74,15 +109,46 @@ const server = (done) => {
   });
   done();
 }
-
+// Reload
+const reload = (done) => {
+  browser.reload();
+  done();
+}
 // Watcher
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/*.html', gulp.series(html, reload));
 }
-
-
-export default gulp.series(
-  html, styles, server, watcher, js, optimazeimages, copyimages, wepP, svgOpt
+//Build
+export const build = gulp.series (
+  clean,
+  copy,
+  optimazeimages,
+  gulp.parallel(
+    styles,
+    html,
+    js,
+    svgOpt,
+    svgSprite,
+    wepP,
+  ),
+);
+// Default
+export default gulp.series (
+  clean,
+  copy,
+  copyimages,
+  gulp.parallel(
+    styles,
+    html,
+    js,
+    svgOpt,
+    svgSprite,
+    wepP,
+  ),
+  gulp.series (
+    server,
+    watcher
+  )
 );
