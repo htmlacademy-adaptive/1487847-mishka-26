@@ -78,7 +78,6 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    padding: 0 50px;
     display: flex;
     padding: 44px 50px 44px;
   }
@@ -156,6 +155,7 @@
 
 .filter__item {
   padding: 3px 0;
+
   @media (min-width: $tablet-width) {
     padding: 21px 0;
   }

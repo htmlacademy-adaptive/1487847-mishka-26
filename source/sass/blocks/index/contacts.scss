@@ -30,7 +30,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 52px;
     margin-bottom: 103px;
   }
