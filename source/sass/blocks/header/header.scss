@@ -189,7 +189,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 36px 0 26px 94px;
+    padding: 33px 0 26px 94px;
   }
 }
 
@@ -227,13 +227,18 @@
 
 .header__icon-svg--cart {
   width: 21px;
-  height: 18px;
+  height: 19px;
   top: 17px;
   left: -45px;
 
   @media (min-width: $tablet-width) {
     top: 18px;
     left: -57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 16px;
+    left: -54px;
   }
 }
 

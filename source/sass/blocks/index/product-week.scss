@@ -17,9 +17,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-rows: 1px repeat(2, 1fr);
-    padding: 0 0 0 175px;
-    margin-bottom: 166px;
+    padding: 0;
+    padding-left: 30px;
+    grid-template-rows: 130px 150px repeat(2, 1fr);
+    margin-bottom: 162px;
+    grid-template-columns: 100px 350px repeat(2, 1fr);
   }
 }
 
@@ -56,8 +58,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
-    top: 67px;
+    grid-column: 2/4;
+    z-index: 3;
+    grid-row: 1/2;
+    align-self: flex-end;
+    margin: 0 0 7px 45px;
   }
 }
 
@@ -76,10 +81,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
     line-height: 17px;
-    left: -726px;
-    top: 72px;
+    grid-column: 1/2;
+    align-self: flex-end;
+    margin: 0;
+    margin-bottom: 20px;
   }
 }
 
@@ -99,13 +105,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    align-self: end;
-    margin-bottom: 17px;
+    align-self: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0  24px 0 45px;
+    grid-column: 2/3;
   }
 }
 
 .product-week__list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   margin-bottom: 31px;
   grid-row: 3/4;
@@ -115,7 +125,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 31px;
+    padding: 20px 45px 0;
+    grid-column: 2/3;
   }
 }
 
@@ -144,6 +155,12 @@
   @media (min-width: $tablet-width) {
     grid-row: 4/5;
     align-self: end;
+    grid-column: 2/3;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 31px;
+    padding-bottom: 5px;
   }
 }
 
@@ -173,6 +190,9 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    padding-top: 5px;
+    grid-column: 3/5;
+    grid-row: 1/5;
   }
 }
 
