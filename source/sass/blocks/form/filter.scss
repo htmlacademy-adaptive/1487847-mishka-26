@@ -177,13 +177,16 @@
 }
 
 .filter__label {
+  display: block;
   font-size: 17px;
   line-height: 18px;
   color: $black;
+  max-width: 160px;
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
     line-height: 19px;
+    max-width: none;
   }
 }
 

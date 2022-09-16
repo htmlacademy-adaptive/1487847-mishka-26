@@ -31,7 +31,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 52px;
+    grid-template-rows: 1fr min-content;
     margin-bottom: 103px;
   }
 }
@@ -145,7 +145,7 @@
   width: 167px;
   height: 1px;
   background-color: $border-green;
-  top: 34px;
+  top: 27px;
 
   &:disabled {
     opacity: 0.3;
@@ -153,6 +153,7 @@
 
   @media (min-width: $tablet-width) {
     width: 201px;
+    top: 34px;
   }
 }
 

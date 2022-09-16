@@ -19,9 +19,9 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 131px 1fr 105px;
-    padding: 0 50px;
-    margin-bottom: 196px;
+    grid-template-rows: min-content 1fr 105px;
+    padding: 81px 50px;
+    margin-bottom: 113px;
   }
 
   @media (min-width: $desktop-width) {
@@ -41,31 +41,27 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
     align-self: center;
+    margin: 37px 0;
   }
 }
 
 .reviews__item {
   font-family: $main-font;
   font-size: 15px;
+  font-weight: 400;
   line-height: 30px;
   color: $grey;
-  min-width: 260px;
   margin: 0 0 21px 0;
 
   @media (min-width: $tablet-width) {
     grid-column: -3/-1;
-    max-width: 645px;
+
     font-size: 17px;
     margin: 0;
     align-self: flex-end;
     padding-top: 41px;
     padding-bottom: 15px;
-
-    br {
-      display: none;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -73,6 +69,21 @@
     margin: 0;
     align-self: start;
     padding: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__item br {
+    display: none;
+  }
+}
+
+.reviews__item .reviews__item-text {
+  min-width: 260px;
+  max-width: 645px;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
   }
 }
 
@@ -84,11 +95,16 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+  }
 }
 
 .reviews__email {
   font-family: $main-font;
   font-size: 17px;
+  font-weight: 400;
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
@@ -111,7 +127,8 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    margin-bottom: 13px;
+    margin-bottom: 9px;
+    margin-right: 22px;
   }
 }
 

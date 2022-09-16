@@ -47,8 +47,10 @@
   flex-wrap: wrap;
 }
 
-.footer__icon-logo-academy {
+.footer__social-link .footer__icon-logo-academy {
   fill: $green;
+  width: 27px;
+  height: 34px;
 }
 
 .footer__social-link:hover .footer__icon-logo-academy {

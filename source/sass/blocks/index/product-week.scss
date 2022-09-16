@@ -19,7 +19,7 @@
   @media (min-width: $desktop-width) {
     padding: 0;
     padding-left: 30px;
-    grid-template-rows: 130px 150px repeat(2, 1fr);
+    grid-template-rows: min-content 150px repeat(2, 1fr);
     margin-bottom: 162px;
     grid-template-columns: 100px 350px repeat(2, 1fr);
   }
@@ -61,8 +61,9 @@
     grid-column: 2/4;
     z-index: 3;
     grid-row: 1/2;
-    align-self: flex-end;
-    margin: 0 0 7px 45px;
+    padding-top: 67px;
+    padding-left: 45px;
+    margin-bottom: 5px;
   }
 }
 
@@ -99,6 +100,7 @@
   margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
+    min-width: 292px;
     font-size: 17px;
     line-height: 30px;
     margin-bottom: 13px;
@@ -134,6 +136,7 @@
   display: flex;
   align-items: center;
   font-family: $main-font;
+  font-weight: 400;
   font-size: 15px;
   line-height: 20px;
   color: $grey;
@@ -155,12 +158,13 @@
   @media (min-width: $tablet-width) {
     grid-row: 4/5;
     align-self: end;
-    grid-column: 2/3;
+    grid-column: 1/2;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 31px;
     padding-bottom: 5px;
+    grid-column: 2/3;
   }
 }
 
@@ -173,7 +177,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 }
 
@@ -205,6 +209,6 @@
   .product-week__price-wrapper .product-week__button {
     min-width: 292px;
     background-color: transparent;
-    padding: 12px 0;
+    padding: 14px 0;
   }
 }
