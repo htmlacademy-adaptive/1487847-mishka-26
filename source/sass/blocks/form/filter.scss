@@ -22,8 +22,13 @@
 .filter__title--color {
   margin-bottom: 33px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 22px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-left: 62px;
+    padding-top: 24px;
   }
 
   @media (min-width: calc($desktop-width + 2px)) {
@@ -70,16 +75,17 @@
 
 .filter__inner {
   padding: 0 30px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    padding: 0 50px;
     display: flex;
-    padding-top: 67px;
-    padding-bottom: 44px;
+    padding: 44px 50px 44px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1150px;
+    min-height: 228px;
+    padding: 46px 50px;
   }
 
   @media (min-width: calc($desktop-width + 2px)) {
@@ -87,6 +93,10 @@
     width: 100%;
     box-sizing: border-box;
   }
+}
+
+.filter__inner--button {
+  min-height: auto;
 }
 
 .filter__wrapper {
@@ -129,8 +139,12 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
-    gap: 20px;
+    gap: 0;
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 5px;
   }
 
   @media (min-width: calc($desktop-width + 2px)) {
@@ -140,7 +154,11 @@
 }
 
 .filter__item {
-  min-height: 42px;
+  padding: 3px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 21px 0;
+  }
 }
 
 .filter__type-wrapper {
@@ -149,7 +167,7 @@
 }
 
 .filter__type {
-  margin-bottom: 19px;
+  margin-bottom: 35px;
   padding: 0 30px;
 
   @media (min-width: $tablet-width) {
@@ -159,32 +177,39 @@
 }
 
 .filter__label {
+  display: block;
   font-size: 17px;
   line-height: 18px;
   color: $black;
+  max-width: 160px;
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
     line-height: 19px;
+    max-width: none;
   }
 }
 
 .filter__list {
   display: flex;
   flex-direction: column;
-  gap: 19px;
+  gap: 36px;
 
   @media (min-width: $tablet-width) {
-    gap: 34px;
+    gap: 17px;
     column-gap: 86px;
   }
 }
 
-.filter__list--radio {
+.filter__list.filter__list--radio {
   gap: 18px;
 
   @media (min-width: $tablet-width) {
-    gap: 35px;
+    gap: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 16px;
   }
 }
 
@@ -207,7 +232,7 @@
 }
 
 .filter__list--color {
-  margin-bottom: 17px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -239,6 +264,14 @@
   position: relative;
   gap: 0;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 17px;
+  }
 }
 
 .filter__input-wrapper--textarea {
@@ -252,7 +285,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 54px;
+    padding-top: 45px;
   }
 
   @media (min-width: calc($desktop-width + 2px)) {
@@ -350,6 +383,10 @@
   @media (min-width: $tablet-width) {
     font-size: 17px;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: auto;
   }
 }
 
@@ -480,6 +517,14 @@
   fill: $black-opacity;
   right: 8px;
   bottom: 17px;
+
+  @media (min-width: $desktop-width) {
+    right: 181px;
+  }
+
+  @media (min-width: calc($desktop-width + 2px)) {
+    right: 8px;
+  }
 }
 
 .filter__input:hover + .filter__input-icon {
@@ -524,9 +569,13 @@
     flex-direction: row-reverse;
     align-items: baseline;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding-top: 34px;
     margin-bottom: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 171px;
   }
 }
 
@@ -536,5 +585,9 @@
 
   @media (min-width: $tablet-width) {
     width: 230px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
   }
 }

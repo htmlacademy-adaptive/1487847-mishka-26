@@ -1,3 +1,9 @@
+.about.section {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 155px;
+  }
+}
+
 .about__wrapper {
   padding: 0 30px;
 
