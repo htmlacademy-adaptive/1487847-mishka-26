@@ -126,6 +126,7 @@
 
   @media (min-width: $tablet-width) {
     order: -1;
+    margin-bottom: 42px;
   }
 
   @media (min-width: $desktop-width) {
@@ -139,7 +140,7 @@
   content: "";
   width: 100px;
   height: 76px;
-  background-image: url("../img/img-icon/icon-play-button.svg");
+  background-image: url("../img/icon-play-button.svg");
   background-repeat: no-repeat;
   top: 50%;
   left: 50%;

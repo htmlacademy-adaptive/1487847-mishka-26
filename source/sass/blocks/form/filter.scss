@@ -440,8 +440,8 @@
 
 .filter__mark--checkbox {
   @media (min-width: $tablet-width) {
-    top: -17px;
-    left: -27px;
+    top: -11px;
+    left: -26px;
   }
 }
 
@@ -517,6 +517,10 @@
   fill: $black-opacity;
   right: 8px;
   bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    right: 25px;
+  }
 
   @media (min-width: $desktop-width) {
     right: 181px;

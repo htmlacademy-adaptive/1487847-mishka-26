@@ -24,7 +24,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" type="text/css" href="css/style.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/style.min.css" />
   <link rel="preload" type="font/woff2" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" type="font/woff2" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
 </head>
@@ -244,8 +244,9 @@
             Отзывы
           </h2>
           <blockquote class="reviews__item">
-            <p class="reviews__item-text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как<br> у популярных инстамамочек.</p>
-            <p class="reviews__item-text">В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+
+            <p class="reviews__item-text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как<span></span><br>у популярных инстамамочек.</p>
+            <p class="reviews__item-text"><span></span>В отчаянии, я накупила аксессуаров и игрушек в Мишке,<span></span><br>и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
           </blockquote>
           <div class="reviews__autor">
             <p class="reviews__name">
@@ -354,8 +355,8 @@
           <a class="footer__social-link" href="https://htmlacademy.ru/intensive/adaptive">
             <p class="footer__text">Разработано</p>
             <svg class="footer__icon-logo-academy" width="27" height="34">
-                <use xlink:href="img/sprite.svg#htmlacademy"></use>
-              </svg>
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            </svg>
           </a>
           <span class="visually-hidden">
             Html-academy
@@ -367,37 +368,39 @@
 
   </footer>
   <!-- <div class="modal-overlay"> -->
-  <div class="modal">
-    <div class="modal__wrapper">
-      <h2 class="modal__title">
-        Добавить в корзину
-      </h2>
-      <form class="form-order" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="form-order__label">Выберите размер:</p>
-        <div class="form-order__label-wrapper">
-          <div class="form-order__input-wrapper form-order__input-wrapper--checked">
-            <label class="form-order__label ">
-              S
-              <input class="form-order__input visually-hidden" type="checkbox" name="size" value="s">
-            </label>
-          </div>
-          <div class="form-order__input-wrapper">
-            <label class="form-order__label">
-              M
-              <input class="form-order__input visually-hidden" type="checkbox" name="size" value="m">
-            </label>
-          </div>
-          <div class="form-order__input-wrapper">
-            <label class="form-order__label">
-              L
-              <input class="form-order__input visually-hidden" type="checkbox" name="size" value="l">
-            </label>
-          </div>
+
+  <div class="modal__wrapper">
+    <h2 class="modal__title">
+      Добавить в корзину
+    </h2>
+    <form class="form-order" action="https://echo.htmlacademy.ru/" method="post">
+      <p class="form-order__title">Выберите размер:</p>
+      <div class="form-order__label-wrapper">
+        <div class="form-order__input-wrapper form-order__input-wrapper--checked">
+          <input class="form-order__input visually-hidden" type="checkbox" name="size" value="s" id="s-size">
+          <label class="form-order__label" for="s-size">
+            S
+          </label>
         </div>
-        <button class="form-order__button button" type="submit">добавить</button>
-      </form>
-    </div>
+        <div class="form-order__input-wrapper">
+          <input class="form-order__input visually-hidden" type="checkbox" name="size" value="m" id="m-size">
+          <label class="form-order__label" for="m-size">
+            M
+          </label>
+        </div>
+        <div class="form-order__input-wrapper">
+          <input class="form-order__input visually-hidden" type="checkbox" name="size" value="l" id="l-size">
+          <label class="form-order__label" for="l-size">
+            L
+          </label>
+        </div>
+      </div>
+      <button class="form-order__button button" type="submit">добавить</button>
+    </form>
   </div>
+  <div class="modal"></div>
+
+  <div class="overlay"></div>
   <!-- </div> -->
 
 
