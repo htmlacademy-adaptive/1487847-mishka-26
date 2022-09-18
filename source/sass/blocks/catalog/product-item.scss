@@ -100,7 +100,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 28px;
+    padding: 0 33px 0 25px;
   }
 }
 
@@ -134,7 +134,6 @@
 
 .product-item__name--two-strings {
   max-width: 240px;
-  margin-bottom: 9px;
 }
 
 .product-item__description {
@@ -147,12 +146,13 @@
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
-    line-height: 2;
+    line-height: 3;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 28px;
     margin-bottom: 64px;
+    line-height: 2;
   }
 }
 

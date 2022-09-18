@@ -72,11 +72,6 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .reviews__item br {
-    display: none;
-  }
-}
 
 .reviews__item .reviews__item-text {
   min-width: 260px;
@@ -85,6 +80,18 @@
   @media (min-width: $tablet-width) {
     display: inline;
   }
+}
+
+
+@media (min-width: $tablet-width) {
+  .reviews__item .reviews__item-text br {
+    display: none;
+  }
+}
+
+.reviews__item-text span {
+  display: inline-block;
+  width: 4px;
 }
 
 .reviews__name {

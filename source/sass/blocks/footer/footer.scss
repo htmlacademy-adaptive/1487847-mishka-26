@@ -17,9 +17,11 @@
     padding: 0 50px;
     box-sizing: border-box;
     margin: 0 auto;
+    justify-content: center;
 
     @media (min-width: $desktop-width) {
       padding: 0 50px;
+      justify-content: start;
     }
   }
 }
@@ -41,7 +43,7 @@
 .footer__social-link {
   display: flex;
   align-items: center;
-  gap: 27px;
+  gap: 25px;
   font-size: 19px;
   line-height: 0.94;
   flex-wrap: wrap;

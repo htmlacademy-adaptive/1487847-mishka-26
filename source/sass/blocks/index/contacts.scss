@@ -152,8 +152,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 201px;
-    top: 34px;
+    width: 100%;
+    top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 35px;
   }
 }
 
@@ -210,6 +214,7 @@
     line-height: 20px;
     background-color: transparent;
     width: 230px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {

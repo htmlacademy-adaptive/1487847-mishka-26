@@ -215,12 +215,16 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 20px;
+  left: 32px;
 
 
   @media (min-width: $tablet-width) {
-    top: 21px;
-    left: -42px;
+    top: 18px;
+    left: -36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -41px;
   }
 }
 
@@ -239,15 +243,14 @@
 .header__icon-svg--cart {
   width: 21px;
   height: 19px;
-  left: 20px;
 
   @media (min-width: $tablet-width) {
-    top: 18px;
-    left: -57px;
+    top: 10px;
+    left: -49px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 16px;
+    top: 11px;
     left: -54px;
   }
 }

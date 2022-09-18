@@ -10,9 +10,6 @@
   box-sizing: border-box;
 }
 
-.modal--open-form {
-  display: block;
-}
 
 .modal__title {
   margin: 0 auto;
@@ -22,8 +19,11 @@
 }
 
 .modal__wrapper {
+  position: fixed;
+  display: none;
   top: 50%;
-  transform: translate(0, 50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 33px 30px 20px;
   background-color: $white;
   box-shadow: 0 5px 10px 0 $black-shadow;
@@ -31,10 +31,15 @@
   height: 336px;
   box-sizing: border-box;
   margin: 0 auto;
+  z-index: 5;
 
   @media (min-width: $tablet-width) {
     width: 566px;
     height: 336px;
-    padding: 37px 92px 46px;
+    padding: 37px 108px 46px;
   }
+}
+
+.modal--open-form {
+  display: block;
 }
