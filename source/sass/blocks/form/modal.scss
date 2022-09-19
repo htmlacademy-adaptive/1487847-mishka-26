@@ -1,4 +1,4 @@
-.modal {
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -18,7 +18,7 @@
   text-transform: uppercase;
 }
 
-.modal__wrapper {
+.modal {
   position: fixed;
   display: none;
   top: 50%;
