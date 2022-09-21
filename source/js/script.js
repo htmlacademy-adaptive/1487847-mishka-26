@@ -1,4 +1,9 @@
 let navToggle = document.querySelector(".nav-toggle");
+let navMenu = document.querySelector(".header__nav");
+navToggle.classList.remove ('nav-toggle--notjs');
+navMenu.classList.remove ('header__nav--notjs');
+menuToggle()
+
 function menuToggle() {
   document.querySelector(".header__nav").classList.toggle('header__nav--show');
   navToggle.classList.toggle('nav-toggle--close');

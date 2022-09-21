@@ -19,7 +19,7 @@
   @media (min-width: $desktop-width) {
     padding: 0;
     padding-left: 30px;
-    grid-template-rows: min-content 150px repeat(2, 1fr);
+    grid-template-rows: min-content min-content repeat(2, 1fr);
     margin-bottom: 162px;
     grid-template-columns: 100px 350px repeat(2, 1fr);
   }
@@ -110,7 +110,7 @@
     align-self: center;
     justify-content: center;
     margin: 0;
-    padding: 0  24px 0 45px;
+    padding: 30px  24px 30px 45px;
     grid-column: 2/3;
   }
 }

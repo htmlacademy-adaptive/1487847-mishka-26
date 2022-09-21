@@ -190,6 +190,7 @@
   }
 }
 
+
 .filter__list {
   display: flex;
   flex-direction: column;
@@ -394,6 +395,11 @@
   position: relative;
   display: block;
   padding-left: 60px;
+
+  &:focus-within {
+    outline: 2px solid $black;
+    border-radius: 2px;
+  }
 }
 
 .filter__control--checkbox-label {
