@@ -18,6 +18,10 @@
     color: $white;
   }
 
+  &:focus-within{
+    outline: $black solid 1px;
+  }
+
   &:disabled {
     opacity: 0.3;
   }

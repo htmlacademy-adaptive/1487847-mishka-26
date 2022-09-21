@@ -10,6 +10,12 @@
   right: 18px;
 }
 
+// убирает кнопка бургера
+.nav-toggle--notjs {
+  display: none;
+}
+//
+
 @media (min-width: $tablet-width) {
   .nav-toggle {
     display: none;

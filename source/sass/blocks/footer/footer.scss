@@ -59,27 +59,10 @@
   fill: $green-academy-hover;
 }
 
-.logo__icon {
-  display: none;
-  fill: $black;
-  opacity: 1;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-
-  &:hover {
-    fill: $green;
-  }
-
-  &:disabled {
-    opacity: 0.3;
-  }
-}
-
 .footer__list--row {
   display: flex;
   gap: 33px;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     margin-right: 127px;
