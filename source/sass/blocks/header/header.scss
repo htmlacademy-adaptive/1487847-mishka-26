@@ -9,12 +9,6 @@
   }
 }
 
-.header-border {
-  @media (min-width: $tablet-width) {
-    border-top: 1px solid $black-shadow;
-  }
-}
-// убираем absolut/static, display/none
 .header__nav {
   display: block;
   box-sizing: border-box;
@@ -109,7 +103,6 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
-  // padding: 27px 42px 26px 105px;
   border-top: 1px solid $whisper;
   background-repeat: no-repeat;
   background-position: 30px 50%;
@@ -235,18 +228,6 @@
 
   @media (min-width: $desktop-width) {
     left: -41px;
-  }
-}
-
-.cart-icon {
-  fill: $black-opacity;
-
-  &:hover {
-    fill: $green;
-  }
-
-  &:disabled {
-    fill-opacity: 0.3;
   }
 }
 

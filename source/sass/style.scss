@@ -1,8 +1,8 @@
-@import "./blocks/general/normalize.scss";
-@import "./blocks/general/color.scss";
-@import "./blocks/general/variables.scss";
-@import "./blocks/general/visually-hidden.scss";
-@import "./blocks/general/fonts.scss";
+@import "./general/normalize.scss";
+@import "./general/color.scss";
+@import "./general/variables.scss";
+@import "./general/visually-hidden.scss";
+@import "./general/fonts.scss";
 @import "./blocks/body/page.scss";
 @import "./blocks/catalog/main-catalog.scss";
 @import "./blocks/catalog/product-item.scss";
@@ -13,9 +13,10 @@
 @import "./blocks/form/overlay.scss";
 @import "./blocks/form/filter.scss";
 @import "./blocks/form/form-order.scss";
-@import "./blocks/form/form-wrapper.scss";
 @import "./blocks/header/header.scss";
 @import "./blocks/header/nav-toggle.scss";
+@import "./blocks/header/header-border.scss";
+@import "./blocks/header/cart-icon.scss";
 @import "./blocks/index/about.scss";
 @import "./blocks/index/product-week.scss";
 @import "./blocks/index/reviews.scss";
@@ -26,4 +27,4 @@
 @import "./blocks/form/modal.scss";
 @import "./blocks/section/section-title.scss";
 @import "./blocks/section/section.scss";
-@import "./blocks/general/button.scss";
+@import "./general/button.scss";
