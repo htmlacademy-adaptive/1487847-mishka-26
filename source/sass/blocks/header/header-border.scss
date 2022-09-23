@@ -1,0 +1,5 @@
+.header-border {
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid $black-shadow;
+  }
+}
